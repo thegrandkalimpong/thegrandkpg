@@ -4,7 +4,7 @@ import React from "react";
 
 const NotFoundPage = () => {
   return (
-    <div className="bg-cream flex h-full max-h-screen min-h-screen flex-col items-center justify-center p-8 text-center">
+    <div className="bg-cream flex h-svh  flex-col items-center justify-center p-8 text-center">
       <Image
         src={"/not-found.svg"}
         width={400}
@@ -15,7 +15,7 @@ const NotFoundPage = () => {
       <h1 className="text-greenish mb-4 font-serif text-4xl font-medium">
         OOPS! Page Not Found
       </h1>
-      <p className="text-greenish/70 mb-8 text-lg font-medium lowercase sm:max-w-md md:max-w-lg">
+      <p className="text-greenish/70 mb-8 text-lg font-medium sm:max-w-md md:max-w-lg">
         The page you are looking for does not exist or has been moved. Please
         check the URL or return to the{" "}
         <Link

@@ -25,7 +25,11 @@ export default function Home() {
                 className="flex h-screen w-full items-center justify-center bg-black bg-cover bg-center bg-no-repeat"
             >
                 <h1 className="font-mageline relative z-30 text-center text-7xl font-bold text-white lg:text-8xl">
-                    The Grand <br /> Kalimpong
+                    The Grand <br /> 
+                    <span className="text-amber-100">
+
+                    Kalimpong
+                    </span>
                 </h1>
                 <video
                     autoPlay
