@@ -1,4 +1,5 @@
 "use client";
+import ImageFrame from "@/components/ImageFrame";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -21,7 +22,7 @@ export default function Home() {
         <div className="relative">
             <section
                 id="home"
-                className="flex pt-0 h-screen w-full items-center justify-center bg-white bg-cover bg-center bg-no-repeat"
+                className="flex h-screen w-full items-center justify-center bg-white bg-cover bg-center bg-no-repeat pt-0"
             >
                 <h1 className="font-mageline relative z-30 text-center text-7xl font-bold text-white lg:text-8xl">
                     The Grand <br />
@@ -47,7 +48,9 @@ export default function Home() {
                 <h2 className="pt-40 text-center text-5xl">Welcome to Box</h2>
             </section>
 
-            <section className="h-screen bg-green-400">hello</section>
+            <section className="h-screen">
+                <ImageFrame src="/assets/bbq1.webp" />
+            </section>
             <section className="h-screen bg-blue-400">world</section>
             <section className="h-screen bg-red-400">bye</section>
         </div>

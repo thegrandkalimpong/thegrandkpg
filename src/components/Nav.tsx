@@ -98,6 +98,11 @@ const Nav = () => {
                         toggleMenu={toggleMenu}
                     />
                     <NavLink
+                        href="/gallery"
+                        label="Gallery"
+                        toggleMenu={toggleMenu}
+                    />
+                    <NavLink
                         href="/contact"
                         label="Contact Us"
                         toggleMenu={toggleMenu}
