@@ -67,7 +67,7 @@ const Nav = () => {
     return (
         <div>
             <button
-                className={`relative z-50 p-2 transition-transform hover:scale-110 ${isOpen ? "text-greenish" : "text-white"}`}
+                className={`text-greenish relative z-50 p-2 transition-transform hover:scale-110 ${isOpen ? "" : ""}`}
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
             >
