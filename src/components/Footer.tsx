@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="h-1/2" id="footer">
                 Footer
             </div>
-            <div className="absolute right-0 bottom-0 left-0 h-1/2 w-full bg-[url(/mountain.svg)] bg-contain bg-cover bg-no-repeat opacity-90"></div>
+            <div className="absolute right-0 bottom-0 left-0 h-1/2 w-full bg-[url(/mountain.svg)] bg-contain bg-cover bg-no-repeat opacity-70 blur-xs"></div>
         </footer>
     );
 };

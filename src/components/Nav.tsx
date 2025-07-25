@@ -80,7 +80,7 @@ const Nav = () => {
 
             <nav
                 ref={navRef}
-                className={`fixed top-0 right-0 left-0 z-40 h-screen w-screen bg-white text-black ${
+                className={`fixed top-0 right-0 left-0 z-40 h-screen w-full bg-white text-black ${
                     isOpen ? "pointer-events-auto" : "pointer-events-none"
                 }`}
                 style={{ opacity: 0, transform: "translateY(-2000px)" }}
