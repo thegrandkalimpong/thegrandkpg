@@ -3,14 +3,14 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { AlignJustify, X } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 
 const Nav = () => {
     const [isOpen, setIsOpen] = React.useState(false);
-    const navRef = React.useRef<HTMLDivElement>(null);
+    const navRef = useRef<HTMLDivElement>(null);
 
     // Initialize nav as hidden
-    React.useEffect(() => {
+    useGSAP(() => {
         if (navRef.current) {
             gsap.set(navRef.current, { opacity: 0, y: -2000 });
         }
@@ -95,8 +95,8 @@ const NavLink = ({
     href: string;
     toggleMenu: () => void;
 }) => {
-    const linkRef = React.useRef<HTMLAnchorElement>(null);
-    const underlineRef = React.useRef<HTMLSpanElement>(null);
+    const linkRef = useRef<HTMLAnchorElement>(null);
+    const underlineRef = useRef<HTMLSpanElement>(null);
 
     const onMouseEnterAnimation = () => {
         if (underlineRef.current) {
