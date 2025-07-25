@@ -58,30 +58,29 @@ const ImageFrame = ({
     };
     return (
         <div
-            className={`${!height && !width && " aspect-square w-80"} relative overflow-hidden ${className}`}
+            className={`${!height && !width && "aspect-square w-80"} relative overflow-hidden ${className}`}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
         >
-            {
-                width && height ? (
-                    <Image
-                        src={src}
-                        alt={alt}
-                        width={width}
-                        height={height}
-                        ref={imageRef}
-                        className={imageClassName}
-                    />
-                ) : (
-                    <Image
-                        src={src}
-                        alt={alt}
-                        ref={imageRef}
-                        fill
-                        className="object-cover shadow-lg"
-                    />
-                )
-            }
+            {width && height ? (
+                <Image
+                    src={src}
+                    alt={alt}
+                    width={width}
+                    height={height}
+                    ref={imageRef}
+                    className={imageClassName}
+                    loading="lazy"
+                />
+            ) : (
+                <Image
+                    src={src}
+                    alt={alt}
+                    ref={imageRef}
+                    fill
+                    className="object-cover shadow-lg"
+                />
+            )}
             {/* <Image
                 src={src}
                 alt={alt}

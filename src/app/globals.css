@@ -20,6 +20,9 @@
 }
 
 @layer base {
+    html {
+        @apply bg-amber-600;
+    }
     body {
         @apply text-foreground bg-cream/50;
     }
@@ -32,9 +35,9 @@
         @apply container mx-auto;
     }
     section {
-        @apply mx-auto min-h-screen px-6 py-12 md:px-8 lg:px-12 ;
+        @apply mx-auto min-h-screen px-6 py-12 md:px-8 lg:px-12;
     }
-  
+
     button {
         @apply cursor-pointer;
     }
