@@ -21,7 +21,7 @@ export default function Home() {
         <div className="relative">
             <section
                 id="home"
-                className="flex h-screen w-full items-center justify-center bg-white bg-cover bg-center bg-no-repeat"
+                className="flex pt-0 h-screen w-full items-center justify-center bg-white bg-cover bg-center bg-no-repeat"
             >
                 <h1 className="font-mageline relative z-30 text-center text-7xl font-bold text-white lg:text-8xl">
                     The Grand <br />
@@ -32,12 +32,12 @@ export default function Home() {
                     muted
                     loop
                     playsInline
-                    className="absolute top-20 -z-10 h-[85vh] w-[90%] object-cover"
+                    className="absolute top-0 -z-10 h-[85vh] w-[90%] object-cover"
                 >
                     <source src="/hero.webm" type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
-                <div className="absolute top-20 z-10 mx-auto h-[85vh] w-[90%] bg-black/60"></div>
+                <div className="absolute top-0 z-10 mx-auto h-[85vh] w-[90%] bg-black/60"></div>
             </section>
 
             <section

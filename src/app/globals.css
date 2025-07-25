@@ -11,7 +11,7 @@
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
     --color-cream: #fef7e6;
-    --color-greenish: #3b6568;
+    --color-greenish: #1e2d1f;
     --font-mageline: "Mageline", sans-serif;
 }
 
@@ -32,8 +32,9 @@
         @apply container mx-auto;
     }
     section {
-        @apply mx-auto min-h-screen px-6 py-12 md:px-8 lg:px-12;
+        @apply mx-auto min-h-screen px-6 py-12 md:px-8 lg:px-12 ;
     }
+  
     button {
         @apply cursor-pointer;
     }
