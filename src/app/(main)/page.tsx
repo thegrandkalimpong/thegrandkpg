@@ -2,7 +2,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import { useRef } from "react";
+// import { useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,7 +24,11 @@ export default function Home() {
         className="flex h-screen w-full items-center justify-center bg-black bg-cover bg-center bg-no-repeat"
       >
         <h1 className="font-mageline text-center text-7xl font-bold text-white lg:text-8xl">
-          The Grand <br /> Kalimpong
+          The Grand <br />
+          <p className="text-amber-600">
+
+            Kalimpong
+          </p>
         </h1>
       </section>
 
