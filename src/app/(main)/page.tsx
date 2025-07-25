@@ -37,7 +37,7 @@ export default function Home() {
                     {/* <source src="/videos/hero.mp4" type="video/mp4" /> */}
                     Your browser does not support the video tag.
                 </video>
-                <div className="absolute inset-0 z-10 bg-black/50"></div>
+                <div className="absolute inset-0 z-10 bg-black/60"></div>
             </section>
 
             <section

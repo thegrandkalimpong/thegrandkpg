@@ -16,15 +16,34 @@ const Nav = () => {
         }
     }, []);
 
+    useGSAP(() => {
+        buttonAnimation();
+        if (isOpen && navRef.current) {
+            NavBarEnter();
+        } else if (!isOpen && navRef.current) {
+            NavBarLeave();
+        }
+    }, [isOpen]);
+
+    const buttonAnimation = () => {
+        if (isOpen) {
+            gsap.to("#cross", {
+                rotate: 90,
+                duration: 0.3,
+                ease: "power2.out",
+            });
+        } else {
+            gsap.to("#cross", {
+                rotate: 0,
+                duration: 0.3,
+                ease: "power2.in",
+            });
+        }
+    };
+
     const toggleMenu = () => {
         if (!navRef.current) return;
-
-        if (isOpen) {
-            NavBarLeave();
-        } else {
-            NavBarEnter();
-            setIsOpen(true);
-        }
+        setIsOpen((prev) => !prev);
     };
 
     const NavBarEnter = () => {
@@ -48,11 +67,15 @@ const Nav = () => {
     return (
         <div>
             <button
-                className="relative z-50 p-2 transition-transform hover:scale-110"
+                className={`relative z-50 p-2 transition-transform hover:scale-110 ${isOpen ? "text-greenish" : "text-white"}`}
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
             >
-                {isOpen ? <X size={24} /> : <AlignJustify size={24} />}
+                {isOpen ? (
+                    <X size={28} id="cross" />
+                ) : (
+                    <AlignJustify size={28} id="hamburger" />
+                )}
             </button>
 
             <nav
