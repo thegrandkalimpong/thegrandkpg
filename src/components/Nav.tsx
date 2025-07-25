@@ -3,28 +3,47 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { AlignJustify, X } from "lucide-react";
 import Link from "next/link";
-import React from "react";
+import React, { useRef } from "react";
 
 const Nav = () => {
     const [isOpen, setIsOpen] = React.useState(false);
-    const navRef = React.useRef<HTMLDivElement>(null);
+    const navRef = useRef<HTMLDivElement>(null);
 
     // Initialize nav as hidden
-    React.useEffect(() => {
+    useGSAP(() => {
         if (navRef.current) {
             gsap.set(navRef.current, { opacity: 0, y: -2000 });
         }
     }, []);
 
+    useGSAP(() => {
+        buttonAnimation();
+        if (isOpen && navRef.current) {
+            NavBarEnter();
+        } else if (!isOpen && navRef.current) {
+            NavBarLeave();
+        }
+    }, [isOpen]);
+
+    const buttonAnimation = () => {
+        if (isOpen) {
+            gsap.to("#cross", {
+                rotate: 90,
+                duration: 0.3,
+                ease: "power2.out",
+            });
+        } else {
+            gsap.to("#cross", {
+                rotate: 0,
+                duration: 0.3,
+                ease: "power2.in",
+            });
+        }
+    };
+
     const toggleMenu = () => {
         if (!navRef.current) return;
-
-        if (isOpen) {
-            NavBarLeave();
-        } else {
-            NavBarEnter();
-            setIsOpen(true);
-        }
+        setIsOpen((prev) => !prev);
     };
 
     const NavBarEnter = () => {
@@ -48,11 +67,15 @@ const Nav = () => {
     return (
         <div>
             <button
-                className="relative z-50 p-2 transition-transform hover:scale-110"
+                className={`relative z-50 p-2 transition-transform hover:scale-110 ${isOpen ? "text-greenish" : "text-white"}`}
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
             >
-                {isOpen ? <X size={24} /> : <AlignJustify size={24} />}
+                {isOpen ? (
+                    <X size={28} id="cross" />
+                ) : (
+                    <AlignJustify size={28} id="hamburger" />
+                )}
             </button>
 
             <nav
@@ -95,8 +118,8 @@ const NavLink = ({
     href: string;
     toggleMenu: () => void;
 }) => {
-    const linkRef = React.useRef<HTMLAnchorElement>(null);
-    const underlineRef = React.useRef<HTMLSpanElement>(null);
+    const linkRef = useRef<HTMLAnchorElement>(null);
+    const underlineRef = useRef<HTMLSpanElement>(null);
 
     const onMouseEnterAnimation = () => {
         if (underlineRef.current) {
