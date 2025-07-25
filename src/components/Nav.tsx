@@ -1,0 +1,142 @@
+"use client";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { AlignJustify, X } from "lucide-react";
+import Link from "next/link";
+import React from "react";
+
+const Nav = () => {
+    const [isOpen, setIsOpen] = React.useState(false);
+    const navRef = React.useRef<HTMLDivElement>(null);
+
+    // Initialize nav as hidden
+    React.useEffect(() => {
+        if (navRef.current) {
+            gsap.set(navRef.current, { opacity: 0, y: -2000 });
+        }
+    }, []);
+
+    const toggleMenu = () => {
+        if (!navRef.current) return;
+
+        if (isOpen) {
+            NavBarLeave();
+        } else {
+            NavBarEnter();
+            setIsOpen(true);
+        }
+    };
+
+    const NavBarEnter = () => {
+        gsap.fromTo(
+            navRef.current,
+            { opacity: 0, y: -2000 },
+            { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
+        );
+    };
+
+    const NavBarLeave = () => {
+        gsap.to(navRef.current, {
+            opacity: 0,
+            y: -2000,
+            duration: 0.5,
+            ease: "power2.in",
+            onComplete: () => setIsOpen(false),
+        });
+    };
+
+    return (
+        <div>
+            <button
+                className="relative z-50 p-2 transition-transform hover:scale-110"
+                onClick={toggleMenu}
+                aria-label="Toggle menu"
+            >
+                {isOpen ? <X size={24} /> : <AlignJustify size={24} />}
+            </button>
+
+            <nav
+                ref={navRef}
+                className={`fixed top-0 right-0 left-0 z-40 h-screen w-screen bg-white text-black ${
+                    isOpen ? "pointer-events-auto" : "pointer-events-none"
+                }`}
+                style={{ opacity: 0, transform: "translateY(-2000px)" }}
+            >
+                <div className="font-mageline flex h-full flex-col items-center justify-center gap-8 text-5xl">
+                    <NavLink href="/" label="Home" toggleMenu={toggleMenu} />
+                    <NavLink
+                        href="/hotel"
+                        label="Our Hotel"
+                        toggleMenu={toggleMenu}
+                    />
+                    <NavLink
+                        href="/rooms"
+                        label="Rooms"
+                        toggleMenu={toggleMenu}
+                    />
+                    <NavLink
+                        href="/contact"
+                        label="Contact Us"
+                        toggleMenu={toggleMenu}
+                    />
+                </div>
+            </nav>
+        </div>
+    );
+};
+
+const NavLink = ({
+    label,
+    href,
+    toggleMenu,
+    ...props
+}: {
+    label: string;
+    href: string;
+    toggleMenu: () => void;
+}) => {
+    const linkRef = React.useRef<HTMLAnchorElement>(null);
+    const underlineRef = React.useRef<HTMLSpanElement>(null);
+
+    const onMouseEnterAnimation = () => {
+        if (underlineRef.current) {
+            gsap.to(underlineRef.current, {
+                scaleX: 1,
+                duration: 0.4,
+                transformOrigin: "left",
+                ease: "power2.out",
+            });
+        }
+    };
+
+    const onMouseLeaveAnimation = () => {
+        if (underlineRef.current) {
+            gsap.to(underlineRef.current, {
+                scaleX: 0,
+                duration: 0.4,
+                transformOrigin: "right",
+                ease: "power2.in",
+            });
+        }
+    };
+
+    return (
+        <Link
+            ref={linkRef}
+            href={href}
+            onClick={toggleMenu}
+            {...props}
+            className="relative inline-block transition-all duration-300 hover:scale-105"
+            onMouseEnter={onMouseEnterAnimation}
+            onMouseLeave={onMouseLeaveAnimation}
+        >
+            <span className="relative z-10">{label}</span>
+            <span
+                ref={underlineRef}
+                className="absolute bottom-0 left-0 h-[3px] w-full origin-left scale-x-0 bg-black"
+            />
+        </Link>
+    );
+};
+
+export default Nav;
