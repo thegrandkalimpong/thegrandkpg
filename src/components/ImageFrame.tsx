@@ -7,15 +7,17 @@ import React from "react";
 const ImageFrame = ({
     src,
     alt = "Image",
-    width = 500,
-    height = 500,
+    width,
+    height,
     className = "",
+    imageClassName = "",
 }: {
     src: string;
     alt?: string;
     width?: number;
     height?: number;
     className?: string;
+    imageClassName?: string;
 }) => {
     const frameRef = React.useRef<HTMLSpanElement>(null);
     const imageRef = React.useRef<HTMLImageElement>(null);
@@ -56,17 +58,38 @@ const ImageFrame = ({
     };
     return (
         <div
-            className={`relative aspect-square w-80 overflow-hidden ${className}`}
+            className={`${!height && !width && " aspect-square w-80"} relative overflow-hidden ${className}`}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
         >
-            <Image
+            {
+                width && height ? (
+                    <Image
+                        src={src}
+                        alt={alt}
+                        width={width}
+                        height={height}
+                        ref={imageRef}
+                        className={imageClassName}
+                    />
+                ) : (
+                    <Image
+                        src={src}
+                        alt={alt}
+                        ref={imageRef}
+                        fill
+                        className="object-cover shadow-lg"
+                    />
+                )
+            }
+            {/* <Image
                 src={src}
                 alt={alt}
                 ref={imageRef}
+                
                 fill
                 className="object-cover shadow-lg"
-            />
+            /> */}
             <span
                 ref={frameRef}
                 className="border-cream/30 absolute inset-5 border-2"

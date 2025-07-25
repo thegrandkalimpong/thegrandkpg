@@ -98,11 +98,11 @@ export const roomImages: TRoomImage[] = [
         category: "hotel",
     },
     // Mountain view
-    {
-        id: "19",
-        src: "/assets/moutain.png",
-        category: "view",
-    },
+    // {
+    //     id: "19",
+    //     src: "/assets/moutain.png",
+    //     category: "view",
+    // },
     // Room images
     {
         id: "20",
@@ -131,7 +131,7 @@ export const roomImages: TRoomImage[] = [
     },
     {
         id: "25",
-        src: "/assets/room6.webp",
+        src: "/assets/room6.jpg",
         category: "room",
     },
     {
