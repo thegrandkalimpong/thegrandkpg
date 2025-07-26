@@ -12,7 +12,7 @@ const Footer = () => {
     return (
         <footer className="bg-moss-dark text-cream relative mt-24">
             {/* Main Footer Content */}
-            <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="relative z-10 mx-auto mb-12 max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
                     {/* Brand Section */}
                     <div className="lg:col-span-2">
@@ -149,7 +149,7 @@ const Footer = () => {
             </div>
 
             {/* Developer Credit */}
-            <div className="py-3">
+            <div className="absolute right-0 bottom-0 left-0 bg-black py-4">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <p className="text-cream/50 text-center text-sm">
                         Designed and Developed by{" "}
@@ -164,12 +164,6 @@ const Footer = () => {
                     </p>
                 </div>
             </div>
-
-            {/* Decorative Background Elements */}
-            {/* <div className="pointer-events-none absolute inset-0 overflow-hidden">
-                <div className="bg-cream/5 absolute -top-24 -right-24 h-48 w-48 rounded-full"></div>
-                <div className="bg-cream/5 absolute -bottom-12 -left-12 h-32 w-32 rounded-full"></div>
-            </div> */}
         </footer>
     );
 };
