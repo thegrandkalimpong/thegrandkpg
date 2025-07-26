@@ -25,7 +25,7 @@
 
 @layer base {
     html {
-        @apply bg-amber-600;
+        @apply bg-white;
     }
     body {
         @apply text-foreground bg-cream/50;
@@ -45,4 +45,8 @@
     button {
         @apply cursor-pointer;
     }
+}
+
+.font-handwriting {
+    font-family: "Caveat", cursive;
 }

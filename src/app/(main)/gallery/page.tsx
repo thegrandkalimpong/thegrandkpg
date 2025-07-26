@@ -79,7 +79,7 @@ const GalleryImage = () => {
                         key={filter}
                         className={`mb-2 px-4 py-2 align-middle text-sm font-semibold tracking-widest uppercase transition-colors ${
                             selectedFilter === filter
-                                ? "bg-greenish text-cream"
+                                ? "bg-moss-light text-cream"
                                 : "hover:bg-greenish bg-cream text-black hover:text-white"
                         }`}
                         onClick={() => setSelectedFilter(filter)}
@@ -88,7 +88,7 @@ const GalleryImage = () => {
                     </button>
                 ))}
             </div>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
+            <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
                 {filteredImages.map((item, index) => {
                     return (
                         <div
