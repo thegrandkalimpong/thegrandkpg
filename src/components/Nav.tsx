@@ -154,14 +154,14 @@ const NavLink = ({
             href={href}
             onClick={toggleMenu}
             {...props}
-            className="relative inline-block transition-all duration-300 hover:scale-105"
+            className="text-moss-light hover:text-moss relative inline-block transition-all duration-300 hover:scale-105"
             onMouseEnter={onMouseEnterAnimation}
             onMouseLeave={onMouseLeaveAnimation}
         >
             <span className="relative z-10">{label}</span>
             <span
                 ref={underlineRef}
-                className="absolute bottom-0 left-0 h-[3px] w-full origin-left scale-x-0 bg-black"
+                className="bg-moss-light absolute bottom-0 left-0 h-[3px] w-full origin-left scale-x-0"
             />
         </Link>
     );
