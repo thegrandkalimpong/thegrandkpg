@@ -9,7 +9,7 @@ const Map = () => {
             width={600}
             height={400}
             alt={"Map"}
-            className="basis-1/2 cursor-pointer rounded-sm border-4 border-white shadow-2xl"
+            className="basis-1/2 cursor-pointer rounded-sm border-4 border-white"
             priority
             onClick={() => {
                 window.open(
