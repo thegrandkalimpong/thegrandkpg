@@ -77,9 +77,9 @@ const GalleryImage = () => {
                 {filters.map((filter) => (
                     <button
                         key={filter}
-                        className={`mb-2 px-4 py-2 align-middle text-sm tracking-wide uppercase transition-colors ${
+                        className={`mb-2 px-4 py-2 align-middle text-sm font-semibold tracking-widest uppercase transition-colors ${
                             selectedFilter === filter
-                                ? "bg-greenish text-white"
+                                ? "bg-greenish text-cream"
                                 : "hover:bg-greenish bg-cream text-black hover:text-white"
                         }`}
                         onClick={() => setSelectedFilter(filter)}
@@ -93,7 +93,7 @@ const GalleryImage = () => {
                     return (
                         <div
                             key={item.id || Math.random()}
-                            className="gallery-image cursor-pointer transition-transform hover:scale-105"
+                            className="gallery-image cursor-pointer transition-transform"
                             onClick={() => openLightbox(item, index)}
                         >
                             <ImageFrame

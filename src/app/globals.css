@@ -12,7 +12,11 @@
     --font-mono: var(--font-geist-mono);
     --color-cream: #fef7e6;
     --color-greenish: #1e2d1f;
+    --color-moss-dark: #1e2d1f;
+    --color-moss: #334d35;
+    --color-moss-light: #476b4a;
     --font-mageline: "Mageline", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
 }
 
 @utility h-hero {
