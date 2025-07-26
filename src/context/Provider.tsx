@@ -20,7 +20,7 @@ export const GsapProvider: React.FC<{ children: React.ReactNode }> = ({
 }) => {
     useGSAP(() => {
         const lenis = new Lenis({
-            duration: 1.3, // slower, smoother scroll
+            duration: 1.1, // slower, smoother scroll
             easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
             smoothWheel: true,
         });

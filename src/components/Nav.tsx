@@ -88,7 +88,7 @@ const Nav = () => {
                 <div className="font-mageline flex h-full flex-col items-center justify-center gap-8 text-5xl">
                     <NavLink href="/" label="Home" toggleMenu={toggleMenu} />
                     <NavLink
-                        href="/hotel"
+                        href="/our-hotel"
                         label="Our Hotel"
                         toggleMenu={toggleMenu}
                     />
