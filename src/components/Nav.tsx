@@ -80,7 +80,7 @@ const Nav = () => {
 
             <nav
                 ref={navRef}
-                className={`fixed top-0 right-0 left-0 z-40 h-screen w-full bg-white text-black ${
+                className={`bg-cream fixed top-0 right-0 left-0 z-40 h-screen w-full text-black ${
                     isOpen ? "pointer-events-auto" : "pointer-events-none"
                 }`}
                 style={{ opacity: 0, transform: "translateY(-2000px)" }}
@@ -154,14 +154,14 @@ const NavLink = ({
             href={href}
             onClick={toggleMenu}
             {...props}
-            className="text-moss-light hover:text-moss relative inline-block transition-all duration-300 hover:scale-105"
+            className="text-moss hover:text-moss-dark relative inline-block transition-all duration-300 hover:scale-105"
             onMouseEnter={onMouseEnterAnimation}
             onMouseLeave={onMouseLeaveAnimation}
         >
             <span className="relative z-10">{label}</span>
             <span
                 ref={underlineRef}
-                className="bg-moss-light absolute bottom-0 left-0 h-[3px] w-full origin-left scale-x-0"
+                className="bg-moss absolute bottom-0 left-0 h-[3px] w-full origin-left scale-x-0"
             />
         </Link>
     );
