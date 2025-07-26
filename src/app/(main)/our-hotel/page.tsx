@@ -153,9 +153,9 @@ const page = () => {
                 <h1 className="font-mageline text-moss-light mb-24 text-center text-5xl font-semibold">
                     Call Us to Book Your Stay
                 </h1>
-                <div className="flex flex-col gap-8 md:flex-row">
+                <div className="flex flex-col gap-8 lg:flex-row">
                     <Map />
-                    <div className="">
+                    <div className="basis-1/2">
                         <p>
                             Tucked close to Kalimpong&apos;s most loved spots,
                             The Grand Kalimpong makes it easy to explore the
