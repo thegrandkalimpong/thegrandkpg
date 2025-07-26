@@ -14,7 +14,7 @@ const page = () => {
 
       <div className='p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-cream max-w-6xl mx-auto mt-24 '>
         {amenities.map((amenity, idx) => (
-          <div key={idx} className='bg-moss-light gap-4 px-4 py-8 sm:py-6'>
+          <div key={idx} className='bg-moss-light gap-4 p-8 sm:p-6'>
             <amenity.Icon className='w-8 h-8 mb-4 mx-auto sm:mx-0' />
             <h4 className='text-lg font-medium text-center sm:text-left'>
               {amenity.title}

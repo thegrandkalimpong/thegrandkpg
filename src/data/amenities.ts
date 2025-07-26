@@ -15,7 +15,7 @@ export const amenities = [
     },
     {
         id: 3,
-        title: "Conmfortable Beds",
+        title: "Comfortable Stay",
         description: "King-size beds",
         Icon: Bed,
     },
