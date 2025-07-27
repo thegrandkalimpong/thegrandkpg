@@ -12,35 +12,14 @@ const images = [
 ];
 
 export default function Slider() {
-    const containerRef = useRef();
-
-    useLayoutEffect(() => {
-        const cards = containerRef.current.querySelectorAll(".card");
-
-        gsap.set(cards, {
-            transformOrigin: "50% 100%",
-            rotateY: (i) => -(i * 15 - ((cards.length - 1) * 15) / 2),
-            xPercent: (i) => 10,
-            z: -100,
-        });
-    }, []);
-
     return (
-        <div
-            ref={containerRef}
-            className="flex items-center justify-center gap-10 perspective-[1000px]"
-        >
-            {images.map((src, i) => (
+        <div className="relative w-full overflow-x-hidden">
+            {images.map((src, index) => (
                 <div
-                    key={i}
-                    className="card h-[300px] w-[800px] overflow-hidden bg-amber-300 shadow-lg transition-transform duration-300"
-                >
-                    <img
-                        src={src}
-                        alt={`img-${i}`}
-                        className="h-full w-full object-cover"
-                    />
-                </div>
+                    key={index}
+                    className="inline-block h-screen w-full bg-cover bg-center"
+                    style={{ backgroundImage: `url(${src})` }}
+                ></div>
             ))}
         </div>
     );
