@@ -12,7 +12,7 @@ const Nav = () => {
     // Initialize nav as hidden
     useGSAP(() => {
         if (navRef.current) {
-            gsap.set(navRef.current, { opacity: 0, y: -2000 });
+            gsap.set(navRef.current, { y: -2000 });
         }
     }, []);
 
@@ -49,14 +49,14 @@ const Nav = () => {
     const NavBarEnter = () => {
         gsap.fromTo(
             navRef.current,
-            { opacity: 0, y: -2000 },
+            { y: -2000 },
             { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" },
         );
     };
 
     const NavBarLeave = () => {
         gsap.to(navRef.current, {
-            opacity: 0,
+            // opacity: 0,
             y: -2000,
             duration: 0.5,
             ease: "power2.in",
