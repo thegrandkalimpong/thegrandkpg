@@ -6,6 +6,8 @@ import {
     MapPin,
     ArrowRight,
 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
@@ -18,10 +20,15 @@ const Footer = () => {
                     <div className="lg:col-span-2">
                         <div className="flex flex-col items-center space-y-4 md:items-start">
                             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white">
-                                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-emerald-600 to-emerald-800">
-                                    <span className="text-lg font-bold text-white">
+                                <div className="">
+                                    {/* <span className="text-lg font-bold text-white">
                                         TGK
-                                    </span>
+                                    </span> */}
+                                    <Link href="/">
+                                        <Image src="/logo.jpg" alt="Logo" width={70} height={70}
+                                            className="rounded-full p-2 bg-white"
+                                        />
+                                    </Link>
                                 </div>
                             </div>
                             <div className="text-center md:text-left">
