@@ -1,4 +1,5 @@
 "use client";
+import Carousel3D from "@/components/Carousel";
 import ImageFrame from "@/components/ImageFrame";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -40,7 +41,9 @@ export default function Home() {
                 </video>
                 <div className="absolute top-0 z-10 mx-auto h-[85vh] w-[90%] bg-black/60"></div>
             </section>
-
+            <section>
+                <Carousel3D />
+            </section>
             <section
                 id="box"
                 className="relative z-10 h-screen bg-white text-black"

@@ -2,11 +2,11 @@
 // useContext
 import React, { createContext } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger, SplitText } from "gsap/all";
+import { ScrollTrigger, SplitText, Draggable } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import Lenis from "lenis";
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText, Draggable);
 
 const GsapContext = createContext<{
     gsap: typeof gsap;
