@@ -1,5 +1,6 @@
 "use client";
 import Heading from "@/components/Heading";
+import ImageFrame from "@/components/ImageFrame";
 import MapSection from "@/components/MapSection";
 import WelcomeSection from "@/components/WelcomeSection";
 import gsap from "gsap";
@@ -42,6 +43,39 @@ export default function Home() {
             {/* <section></section> */}
             <section>
                 <WelcomeSection />
+            </section>
+            <h2 className="font-mageline text-moss-light mt-20 mb-10 text-center text-5xl font-bold">
+                Your Comfort, Our Priority
+            </h2>
+            <section className="text-cream grid max-w-6xl grid-cols-1 grid-rows-4 gap-4 md:grid-cols-3">
+                <div className="bg-moss-light row-span-3 aspect-square w-full">
+                    <ImageFrame
+                        src="/assets/food1.webp"
+                        className="h-full w-full"
+                    />
+                </div>
+                <div className="bg-moss-light font-handwriting flex w-full items-center justify-center p-4 md:flex">
+                    some text
+                </div>
+                <div className="bg-moss-light row-span-3 aspect-square w-full">
+                    <ImageFrame
+                        src="/assets/balcony2.webp"
+                        className="h-full w-full"
+                    />
+                </div>
+                {/* <div className="w-full bg-moss-light">k</div> */}
+                <div className="bg-moss-light row-span-3 aspect-square w-full">
+                    <ImageFrame
+                        src="/assets/view9.webp"
+                        className="h-full w-full"
+                    />
+                </div>
+                <div className="bg-moss-light font-handwriting flex w-full items-center justify-center p-4 md:flex">
+                    some text
+                </div>
+                <div className="bg-moss-light font-handwriting flex w-full items-center justify-center p-4 md:flex">
+                    some text
+                </div>
             </section>
             <section className="bg-moss-light text-cream mx-auto mt-44 min-h-[70vh] max-w-6xl">
                 hi
