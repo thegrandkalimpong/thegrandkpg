@@ -1,7 +1,6 @@
-"use client";
 import Heading from "@/components/Heading";
-import ImageFrame from "@/components/ImageFrame";
 import MapSection from "@/components/MapSection";
+import Waterfall from "@/components/Waterfall";
 import WelcomeSection from "@/components/WelcomeSection";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
@@ -9,17 +8,15 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home() {
-    // useGSAP(() => {
-    //     ScrollTrigger.create({
-    //         trigger: "#home",
-    //         start: "top top",
-    //         end: "bottom top",
-    //         pin: true,
-    //         pinSpacing: false,
-    //     });
-    // });
+export const metadata = {
+    title: "Home",
+    description:
+        "Welcome to The Grand Kalimpong, your serene escape in the hills.",
+    keywords:
+        "hotel, Kalimpong, accommodation, cheap stay, family-friendly, BBQ, bonfire, budget, affordable, resort, sightseeing, local cuisine",
+};
 
+export default function Home() {
     return (
         <div className="relative">
             {/* <Fashionslider /> */}
@@ -47,44 +44,7 @@ export default function Home() {
             <h2 className="font-mageline text-moss-light mt-20 mb-10 text-center text-5xl font-bold">
                 Your Comfort, Our Priority
             </h2>
-            <section className="text-cream grid max-w-6xl grid-cols-1 grid-rows-4 gap-4 md:grid-cols-3">
-                <div className="bg-moss-light row-span-3 aspect-square w-full">
-                    <ImageFrame
-                        src="/assets/food1.webp"
-                        className="h-full w-full"
-                    />
-                </div>
-                <div className="bg-moss-light font-handwriting flex w-full items-center justify-center p-4 md:flex">
-                    some text
-                </div>
-                <div className="bg-moss-light row-span-3 aspect-square w-full">
-                    <ImageFrame
-                        src="/assets/balcony2.webp"
-                        className="h-full w-full"
-                    />
-                </div>
-                {/* <div className="w-full bg-moss-light">k</div> */}
-                <div className="bg-moss-light row-span-3 aspect-square w-full">
-                    <ImageFrame
-                        src="/assets/view9.webp"
-                        className="h-full w-full"
-                    />
-                </div>
-                <div className="bg-moss-light font-handwriting flex w-full items-center justify-center p-4 md:flex">
-                    some text
-                </div>
-                <div className="bg-moss-light font-handwriting flex w-full items-center justify-center p-4 md:flex">
-                    some text
-                </div>
-            </section>
-            <section className="bg-moss-light text-cream mx-auto mt-44 min-h-[70vh] max-w-6xl">
-                hi
-            </section>
-            {/* 
-            <section className="h-screen">
-                <ImageFrame src="/assets/bbq1.webp" />
-            </section> */}
-            {/* <section className="h-screen bg-blue-400">world</section> */}
+            <Waterfall />
 
             <MapSection />
         </div>

@@ -6,7 +6,11 @@ import { MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
+export const metadata = {
+    title: "Our Hotel",
+};
+
+const OurHotelPage = () => {
     return (
         <section>
             <h1 className="font-mageline text-moss flex justify-center text-6xl font-bold">
@@ -39,7 +43,7 @@ const page = () => {
             </div>
 
             <div className="mx-auto mt-30 grid max-w-6xl grid-cols-1 gap-4 p-4 md:grid-cols-2">
-                <p className="place-self-end order-1 sm:order-0">
+                <p className="order-1 place-self-end sm:order-0">
                     At The Grand Kalimpong, evenings are made extra special with
                     our outdoor BBQ experience. Whether you&apos;re traveling
                     with friends, family, or your special someone, you can enjoy
@@ -123,7 +127,7 @@ const page = () => {
                         />
                     </svg> */}
                     <Image
-                        src={'./bbqarrow.svg'}
+                        src={"./bbqarrow.svg"}
                         alt="Decorative Element"
                         width={50}
                         height={50}
@@ -154,7 +158,7 @@ const page = () => {
                         />
                     </svg> */}
                     <Image
-                        src={'./bbqarrow.svg'}
+                        src={"./bbqarrow.svg"}
                         alt="Decorative Element"
                         width={50}
                         height={50}
@@ -196,4 +200,4 @@ const page = () => {
     );
 };
 
-export default page;
+export default OurHotelPage;

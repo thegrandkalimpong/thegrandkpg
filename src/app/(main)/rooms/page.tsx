@@ -2,7 +2,11 @@ import ImageFrame from "@/components/ImageFrame";
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
+export const metadata = {
+    title: "Rooms",
+};
+
+const RoomsPage = () => {
     return (
         <section className="relative">
             <h1 className="font-mageline text-moss flex justify-center text-6xl font-bold">
@@ -139,4 +143,4 @@ const RoomCard = ({
     );
 };
 
-export default page;
+export default RoomsPage;
