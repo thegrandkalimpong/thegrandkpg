@@ -2,8 +2,12 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
     /* config options here */
-    output: "export",
-    basePath: "/thegrandk",
+    // output: "export",
+    // basePath: "/thegrandk",
+    // images: {
+    //     unoptimized: true,
+    // },
+    // assetPrefix: "/thegrandk",
 };
 
 export default nextConfig;
