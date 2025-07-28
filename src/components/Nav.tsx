@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { AlignJustify, X } from "lucide-react";
 import Link from "next/link";
 import React, { useRef } from "react";
+import NavHamburger from "./NavHamburger";
 
 const Nav = () => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -71,11 +72,7 @@ const Nav = () => {
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
             >
-                {isOpen ? (
-                    <X size={28} id="cross" />
-                ) : (
-                    <AlignJustify size={28} id="hamburger" />
-                )}
+                <NavHamburger isOpen={isOpen} />
             </button>
 
             <nav
