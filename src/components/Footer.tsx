@@ -12,7 +12,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer className="bg-moss-dark text-cream relative mt-24">
+        <footer className="bg-moss-dark text-cream relative z-20 mt-24">
             {/* Main Footer Content */}
             <div className="relative z-10 mx-auto mb-12 max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
@@ -25,8 +25,12 @@ const Footer = () => {
                                         TGK
                                     </span> */}
                                     <Link href="/">
-                                        <Image src="/logo.jpg" alt="Logo" width={70} height={70}
-                                            className="rounded-full p-2 bg-white"
+                                        <Image
+                                            src="/logo.jpg"
+                                            alt="Logo"
+                                            width={70}
+                                            height={70}
+                                            className="rounded-full bg-white p-2"
                                         />
                                     </Link>
                                 </div>

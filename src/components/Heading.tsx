@@ -1,15 +1,14 @@
 "use client";
-import { useGSAP } from '@gsap/react';
-import gsap from 'gsap';
-import { SplitText } from 'gsap/all';
-import React from 'react'
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { SplitText } from "gsap/all";
+import React from "react";
 
 const Heading = () => {
     const heading = React.useRef<HTMLHeadingElement>(null);
     useGSAP(() => {
-
         const splitHeading = SplitText.create(heading.current, {
-            type: 'chars',
+            type: "chars",
         });
 
         gsap.from(splitHeading.chars, {
@@ -17,30 +16,31 @@ const Heading = () => {
             delay: 0.75,
             y: -60,
             opacity: 0,
-            ease: 'power2.out',
+            ease: "power2.out",
             stagger: 0.05,
-        })
-    })
+        });
+    });
 
     return (
         <div>
             <h1
                 ref={heading}
-                className="text-white text-7xl md:text-9xl font-mageline font-bold tracking-wider ">
-                <span className='text-shadow-sm text-shadow-amber-500'>
+                className="font-mageline px-4 text-center text-7xl font-bold tracking-wider text-white sm:text-8xl lg:text-9xl"
+            >
+                <span className="text-shadow-amber-500 text-shadow-sm">
                     The Grand
                 </span>
-                <br /> 
+                <br />
 
-                <span className='text-shadow-sm text-shadow-red-400'>
+                <span className="text-shadow-red-400 text-shadow-sm">
                     Kalimpong
                 </span>
             </h1>
-            <h2 className='text-white/70 uppercase font-roboto tracking-[15px] text-center mt-12'>Your Holiday destination</h2>
-
+            <h2 className="font-roboto mt-12 text-center tracking-[15px] text-white/70 uppercase">
+                Your Holiday destination
+            </h2>
         </div>
+    );
+};
 
-    )
-}
-
-export default Heading
+export default Heading;

@@ -26,7 +26,10 @@ export default function Home() {
     return (
         <div className="relative">
             {/* <Fashionslider /> */}
-            <section id="home" className="relative -top-24 px-0 flex items-center justify-center left-0 z-50 min-h-screen w-full">
+            <section
+                id="home"
+                className="relative -top-24 left-0 z-50 flex min-h-screen w-full items-center justify-center px-0"
+            >
                 <Heading />
                 <video
                     autoPlay
@@ -41,11 +44,11 @@ export default function Home() {
                 <div className="absolute top-0 -z-10 mx-auto h-full w-full bg-black/60"></div>
             </section>
             {/* <section></section> */}
-            <section
-
-            >
+            <section>
                 <WelcomeSection />
-                {/* <h2 className="pt-40 text-center text-5xl">Welcome to Box</h2> */}
+            </section>
+            <section className="bg-moss-light text-cream mx-auto mt-44 min-h-[70vh] max-w-6xl">
+                hi
             </section>
             {/* 
             <section className="h-screen">
@@ -54,7 +57,6 @@ export default function Home() {
             {/* <section className="h-screen bg-blue-400">world</section> */}
 
             <MapSection />
-
         </div>
     );
 }
