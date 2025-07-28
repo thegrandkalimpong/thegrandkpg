@@ -5,7 +5,7 @@ import Link from 'next/link'
 const WelcomeSection = () => {
     return (
         <>
-            <h1 className='text-center text-6xl font-mageline text-moss-light font-bold mb-24'>The Grand Kalimpong</h1>
+            <h1 className='text-center text-6xl font-mageline text-moss-light font-bold mb-24'>About Us</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 text-black max-w-6xl mx-auto"> 
                 <div className='order-1 md:order-0  '>
@@ -23,13 +23,11 @@ const WelcomeSection = () => {
                     </div>
 
                 </div>
-                <div className='order-0 md:order-1'>
+                <div className='order-0 md:order-1 w-full'>
                     <ImageFrame
                         src={'/assets/room1.webp'}
-                        alt='Welcome to The Grand Kalimpong'
-                        height={400}
-                        width={600}
-                        className='object-fill'
+                        alt='Welcome to The Grand Kalimpong'    
+                        className='object-fill w-full h-96'
                     />
                 </div>
             </div>

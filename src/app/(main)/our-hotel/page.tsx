@@ -38,8 +38,8 @@ const page = () => {
                 ))}
             </div>
 
-            <div className="mx-auto mt-24 grid max-w-6xl grid-cols-1 gap-4 p-4 md:grid-cols-2">
-                <p className="place-self-end">
+            <div className="mx-auto mt-30 grid max-w-6xl grid-cols-1 gap-4 p-4 md:grid-cols-2">
+                <p className="place-self-end order-1 sm:order-0">
                     At The Grand Kalimpong, evenings are made extra special with
                     our outdoor BBQ experience. Whether you&apos;re traveling
                     with friends, family, or your special someone, you can enjoy
@@ -98,13 +98,13 @@ const page = () => {
                 </div>
 
                 {/* Decorative Elements */}
-                <div className="absolute top-0 right-1/4 rotate-12 transform opacity-0 lg:opacity-100">
+                <div className="absolute top-0 right-1/4 rotate-14 transform opacity-0 lg:opacity-100">
                     <div className="text-moss-light font-handwriting text-2xl">
                         Perfect for
                         <br />
                         <span className="text-moss font-bold">families!</span>
                     </div>
-                    <svg
+                    {/* <svg
                         className="text-moss-light ml-8 h-12 w-16"
                         viewBox="0 0 64 48"
                         fill="currentColor"
@@ -121,14 +121,21 @@ const page = () => {
                             strokeWidth="2"
                             fill="none"
                         />
-                    </svg>
+                    </svg> */}
+                    <Image
+                        src={'./bbqarrow.svg'}
+                        alt="Decorative Element"
+                        width={50}
+                        height={50}
+                        className="text-moss-light ml-4 h-10 w-16 -rotate-2"
+                    />
                 </div>
 
                 <div className="absolute bottom-4 left-1/4 -rotate-6 transform">
                     <div className="text-moss font-handwriting text-lg">
                         It&apos;s delicious!
                     </div>
-                    <svg
+                    {/* <svg
                         className="text-moss -mt-2 -ml-2 h-8 w-12"
                         viewBox="0 0 48 32"
                         fill="currentColor"
@@ -145,7 +152,14 @@ const page = () => {
                             strokeWidth="2"
                             fill="none"
                         />
-                    </svg>
+                    </svg> */}
+                    <Image
+                        src={'./bbqarrow.svg'}
+                        alt="Decorative Element"
+                        width={50}
+                        height={50}
+                        className="text-moss-light ml-8 h-8 w-16"
+                    />
                 </div>
             </div>
 

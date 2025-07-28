@@ -1,11 +1,7 @@
 "use client";
-import Carousel3D from "@/components/Carousel";
-import Fashionslider from "@/components/FashionSlider";
 import Heading from "@/components/Heading";
-import ImageFrame from "@/components/ImageFrame";
 import MapSection from "@/components/MapSection";
 import WelcomeSection from "@/components/WelcomeSection";
-import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 // import { useRef } from "react";

@@ -25,7 +25,7 @@ const Heading = () => {
         <div>
             <h1
                 ref={heading}
-                className="font-mageline px-4 text-center text-7xl font-bold tracking-wider text-white sm:text-8xl lg:text-9xl"
+                className="font-mageline px-4 text-center text-6xl font-bold tracking-wider text-white sm:text-8xl lg:text-9xl"
             >
                 <span className="text-shadow-amber-500 text-shadow-sm">
                     The Grand
