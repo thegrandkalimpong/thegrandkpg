@@ -30,12 +30,12 @@ export default function Home() {
                     muted
                     loop
                     playsInline
-                    className="absolute top-0 -z-10 h-full w-full object-cover"
+                    className="absolute top-0 -z-10 h-full w-full object-cover "
                 >
-                    <source src="/hero.webm" type="video/webm" />
+                    <source src="/hero3.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
-                <div className="absolute top-0 -z-10 mx-auto h-full w-full bg-black/60"></div>
+                <div className="absolute top-0 -z-10 mx-auto h-full w-full bg-black/70"></div>
             </section>
             {/* <section></section> */}
             <section>
