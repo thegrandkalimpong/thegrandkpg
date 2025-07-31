@@ -19,7 +19,6 @@ export const metadata = {
 export default function Home() {
     return (
         <div className="relative">
-            {/* <Fashionslider /> */}
             <section
                 id="home"
                 className="relative -top-24 left-0 z-50 flex min-h-screen w-full items-center justify-center px-0"
@@ -30,9 +29,9 @@ export default function Home() {
                     muted
                     loop
                     playsInline
-                    className="absolute top-0 -z-10 h-full w-full object-cover "
+                    className="absolute top-0 -z-10 h-full w-full object-cover"
                 >
-                    <source src="/hero3.mp4" type="video/mp4" />
+                    <source src="/hero4.webm" type="video/webm" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="absolute top-0 -z-10 mx-auto h-full w-full bg-black/70"></div>
