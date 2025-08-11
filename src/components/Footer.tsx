@@ -15,7 +15,7 @@ const Footer = () => {
         <footer className="bg-moss-dark text-cream relative z-20 mt-24">
             {/* Main Footer Content */}
             <div className="relative z-10 mx-auto mb-12 max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
+                <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-3 lg:grid-cols-4">
                     {/* Brand Section */}
                     <div className="lg:col-span-2">
                         <div className="flex flex-col items-center space-y-4 md:items-start">
