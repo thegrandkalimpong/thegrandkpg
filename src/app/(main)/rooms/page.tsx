@@ -13,8 +13,19 @@ const RoomsPage = () => {
                 Rooms
             </h1>
             {/* cute stuff */}
-            <div className="text-moss-light absolute top-1/4 left-1/12 -rotate-12">
-                <p className="font-handwriting">happy holidays</p>
+            <div className="text-moss-light absolute hidden md:block md:top-1/4 left-1/19 rotate-24">
+                <p className="font-handwriting ">happy holidays</p>
+                <Image
+                    unoptimized
+                    src="/arrow.svg"
+                    alt=""
+                    height={50}
+                    width={50}
+                    className="relative bottom-2 mx-auto mt-4 w-18 "
+                />
+            </div>
+            <div className="text-moss-light absolute top-160 md:top-179 right-1/13 -rotate-26">
+                <p className="font-handwriting">It&apos;s Delightful</p>
                 <Image
                     unoptimized
                     src="/arrow.svg"
@@ -24,18 +35,7 @@ const RoomsPage = () => {
                     className="relative bottom-2 mx-auto mt-4"
                 />
             </div>
-            <div className="text-moss-light absolute top-2/4 right-1/12 -rotate-12">
-                <p className="font-handwriting">some text</p>
-                <Image
-                    unoptimized
-                    src="/arrow.svg"
-                    alt=""
-                    height={50}
-                    width={50}
-                    className="relative bottom-2 mx-auto mt-4"
-                />
-            </div>
-            <div className="text-moss-light absolute top-3/4 left-1/12 -rotate-12">
+            <div className="text-moss-light absolute top-3/4 left-1/12 -rotate-12 hidden md:block">
                 <p className="font-handwriting">some text</p>
                 <Image
                     unoptimized
@@ -76,6 +76,7 @@ const RoomCard = ({
                         warm & comfy
                         <img
                             src="/wave.svg"
+                           
                             alt="Wave"
                             className="ml-2 inline-block stroke-white"
                         />
@@ -117,7 +118,7 @@ const RoomCard = ({
                 </p>
             </div>
 
-            <div className="border-moss-light/40 grid grid-cols-2 gap-4 border-t-2 border-b-2 text-center md:grid-cols-4">
+            <div className="border-moss-light/40 grid grid-cols-3 gap-4 border-t-2 border-b-2 text-center md:grid-cols-3">
                 <div className="py-6">
                     <p className="text-moss-light text-sm">Rooms</p>
                     <p className="font-semibold">4 Rooms</p>
@@ -132,12 +133,12 @@ const RoomCard = ({
                     <p className="text-moss-light text-sm">Balcony view</p>
                     <p className="font-semibold">Mountain view from Balcony</p>
                 </div>
-                <div className="py-6">
+                {/* <div className="py-6">
                     <p className="text-moss-light text-sm">
                         Price per visitor per night
                     </p>
                     <p className="font-semibold">2500 Rs</p>
-                </div>
+                </div> */}
             </div>
         </div>
     );
