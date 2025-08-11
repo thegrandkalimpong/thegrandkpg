@@ -45,25 +45,31 @@ const ContactForm = () => {
     return (
         <section className="bg-greenish ">
             <div className="max-w-3xl mx-auto pb-18 px-6">
-                <h2 className="text-cream font-mageline text-3xl font-semibold mb-6">Contact Form</h2>
+                <h2 className="text-cream font-mageline text-5xl font-semibold mb-6">Contact Form</h2>
                 <form ref={formRef} className="space-y-4" onSubmit={handleSubmit}>
                     <div>
                         <label className="block text-cream mb-2" htmlFor="name">Name</label>
-                        <input type="text" id="name" name="name" required className="w-full p-2 rounded bg-cream text-black" placeholder="Your Name" />
+                        <input type="text" id="name" name="name" required className="w-full p-4  bg-cream text-moss-dark focus:outline-none focus:ring-4 focus:ring-cream/20" placeholder="Your Name"
+                        />
+                    </div>
+                    <div>
+                        <label className="block text-cream mb-2" htmlFor="name">Mobile</label>
+                        <input type="text" id="name" name="name" className="w-full p-4  bg-cream text-moss-dark focus:outline-none focus:ring-4 focus:ring-cream/20" placeholder="Your Mobile Number"
+                        />
                     </div>
                     <div>
                         <label className="block text-cream mb-2" htmlFor="email">Email</label>
-                        <input type="email" id="email" name="email" required className="w-full p-2 rounded bg-cream text-black" placeholder="Your Email" />
+                        <input type="email" id="email" name="email" className="w-full p-4  bg-cream text-moss-dark focus:outline-none focus:ring-4 focus:ring-cream/20" placeholder="Your Email" />
                     </div>
                     <div>
                         <label className="block text-cream mb-2" htmlFor="message">Message</label>
-                        <textarea id="message" name="message" rows={4} required className="w-full p-2 rounded bg-cream text-black" placeholder="Your Message"></textarea>
+                        <textarea id="message" name="message" rows={4} required className="w-full p-4  bg-cream focus:outline-none focus:ring-4 focus:ring-cream/20 text-moss-dark" placeholder="Your Message"></textarea>
                     </div>
-                    <button type="submit" disabled={isSubmitting} className="bg-moss-light text-white px-4 py-2 rounded hover:bg-moss-dark transition-colors">
+                    <button type="submit" disabled={isSubmitting} className="bg-[hsl(115,40%,45%)] text-cream px-4 py-2 hover:bg-cream/90 hover:text-moss-dark transition-colors font-semibold">
                         {isSubmitting ? "Sending..." : "Send Message"}
                     </button>
                 </form>
-                {<p className="text-cream mt-4">{result}</p>}
+                <p className="text-cream mt-4">{result}</p>
             </div>
         </section>
     );
