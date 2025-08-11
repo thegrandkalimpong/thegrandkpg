@@ -1,5 +1,6 @@
 import React from "react";
-import { Mail, Phone } from "lucide-react";
+import { Mail, MessageCircle, Phone } from "lucide-react";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
     title: "Contact Us",
@@ -31,6 +32,17 @@ const page = () => {
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
                     <div className="text-cream flex w-full flex-col items-center justify-between gap-0.5 py-4 font-medium md:flex-row">
                         <div className="flex flex-col items-center justify-center md:flex-row md:gap-3">
+                            <MessageCircle className="mb-2 md:mb-0" />
+                            <p>WhatsApp Us</p>
+                            <p className="mb-2 opacity-60 md:mb-0">
+                                (Mon - Sun: 8:00 - 22:00)
+                            </p>
+                        </div>
+                        <a href="https://wa.me/+91 1234567890" target="_blank">+91 1234567890</a>
+                    </div>
+                    <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
+                    <div className="text-cream flex w-full flex-col items-center justify-between gap-0.5 py-4 font-medium md:flex-row">
+                        <div className="flex flex-col items-center justify-center md:flex-row md:gap-3">
                             <Mail className="mb-2 md:mb-0" />
                             <p>Mail Us</p>
                             <p className="mb-2 opacity-60 md:mb-0">
@@ -41,7 +53,7 @@ const page = () => {
                     </div>
 
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
-                    <p className="text-cream pt-4">
+                    <p className="text-cream py-4">
                         Lorem ipsum, dolor sit amet consectetur adipisicing
                         elit. Exercitationem, unde quaerat. Vel quas quasi
                         corrupti aut ducimus commodi facere, deserunt eaque
@@ -50,8 +62,11 @@ const page = () => {
                         asperiores animi aperiam laborum nesciunt, dignissimos,
                         sequi eius velit odio magnam tenetur perferendis nobis?
                     </p>
+                    <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
                 </div>
             </div>
+
+            <ContactForm />
         </section>
     );
 };
