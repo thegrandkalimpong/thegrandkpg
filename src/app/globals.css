@@ -98,3 +98,98 @@
 .slider::after {
     bottom: -490%;
 }
+
+/* ===== General FormControl styling ===== */
+.MuiFormControl-root {
+    margin-bottom: 16px;
+}
+
+/* ===== Labels ===== */
+.MuiInputLabel-root {
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+.MuiInputLabel-root.Mui-focused {
+    color: #1976d2; /* primary.main */
+}
+
+/* ===== Outlined Input / TextField ===== */
+.MuiOutlinedInput-root {
+    border-radius: 12px;
+    background-color: #fff;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #1976d2; /* primary.main */
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-width: 2px;
+    border-color: #1976d2;
+}
+
+.MuiOutlinedInput-input {
+    padding: 10px 14px;
+}
+
+/* Disabled input background */
+.MuiOutlinedInput-root.Mui-disabled {
+    background-color: #f5f5f5;
+}
+
+/* ===== Select component ===== */
+.MuiSelect-select {
+    padding: 10px 14px !important;
+}
+.MuiMenuItem-root {
+    font-size: 0.875rem;
+}
+
+/* ===== Checkbox ===== */
+.MuiCheckbox-root {
+    color: #9ca3af; /* Tailwind gray-400 */
+}
+.MuiCheckbox-root.Mui-checked {
+    color: #1976d2; /* primary.main */
+}
+
+/* ===== Radio buttons ===== */
+.MuiRadio-root {
+    color: #9ca3af; /* gray-400 */
+}
+.MuiRadio-root.Mui-checked {
+    color: #1976d2;
+}
+
+/* ===== Switch ===== */
+.MuiSwitch-root .MuiSwitch-thumb {
+    background-color: white;
+}
+.MuiSwitch-switchBase.Mui-checked {
+    color: #1976d2;
+}
+.MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track {
+    background-color: #1976d2;
+}
+
+/* ===== Date Picker ===== */
+.MuiPickersDay-root {
+    font-weight: 500;
+}
+.MuiPickersDay-root.Mui-selected {
+    background-color: #1976d2;
+}
+.MuiPickersDay-root.Mui-selected:hover {
+    background-color: #1565c0; /* darker blue */
+}
+
+/* ===== Helper text / errors ===== */
+.MuiFormHelperText-root {
+    font-size: 0.75rem;
+}
+.MuiFormHelperText-root.Mui-error {
+    color: #d32f2f; /* red-600 */
+}
