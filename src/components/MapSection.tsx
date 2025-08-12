@@ -4,7 +4,7 @@ import Map from "./Map";
 
 const MapSection = () => {
     return (
-        <section className="mx-auto mt-32 w-full max-w-6xl pt-24 text-black">
+        <section className="mx-auto mt-32 w-full max-w-6xl pt-24">
             <h1 className="font-mageline text-moss-light mb-24 text-center text-5xl font-semibold">
                 Call Us to Book Your Stay
             </h1>

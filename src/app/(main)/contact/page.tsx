@@ -8,7 +8,7 @@ export const metadata = {
 
 const page = () => {
     return (
-        <section className="pt-0 text-black">
+        <section className="pt-0">
             <div className="bg-greenish h-full min-h-svh w-full px-6 py-24">
                 <div className="mx-auto flex h-full w-full max-w-3xl flex-col items-start justify-center gap-4 px-4 text-left">
                     <p className="text-cream text-xl font-semibold">
@@ -17,7 +17,6 @@ const page = () => {
                     <h1 className="font-mageline text-cream mt-4 text-5xl font-bold">
                         {/* Contact us today to learn more about our resort. */}
                         We&apos;re Here to Help You Plan the Perfect Stay
-
                     </h1>
 
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
@@ -40,7 +39,9 @@ const page = () => {
                                 (Mon - Sun: 8:00 - 22:00)
                             </p>
                         </div>
-                        <a href="https://wa.me/+91 1234567890" target="_blank">+91 1234567890</a>
+                        <a href="https://wa.me/+91 1234567890" target="_blank">
+                            +91 1234567890
+                        </a>
                     </div>
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
                     <div className="text-cream flex w-full flex-col items-center justify-between gap-0.5 py-4 font-medium md:flex-row">
@@ -56,13 +57,16 @@ const page = () => {
 
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
                     <p className="text-cream py-4">
-                        Whether you&apos;re ready to book your next getaway, have questions about our
-                        rooms, or need help planning a special event, our team at
-                        <strong> The Grand Kalimpong </strong> is here for you.&nbsp;
-                        Reach out by phone, WhatsApp, or email&mdash;we&apos;ll respond promptly and
-                        make sure your experience is as smooth and enjoyable as your stay with us.
-                        From the moment you contact us to the day you check out, we&apos;re dedicated
-                        to creating unforgettable memories for you.
+                        Whether you&apos;re ready to book your next getaway,
+                        have questions about our rooms, or need help planning a
+                        special event, our team at
+                        <strong> The Grand Kalimpong </strong> is here for
+                        you.&nbsp; Reach out by phone, WhatsApp, or
+                        email&mdash;we&apos;ll respond promptly and make sure
+                        your experience is as smooth and enjoyable as your stay
+                        with us. From the moment you contact us to the day you
+                        check out, we&apos;re dedicated to creating
+                        unforgettable memories for you.
                     </p>
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
                 </div>

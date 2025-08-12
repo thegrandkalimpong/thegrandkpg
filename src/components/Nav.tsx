@@ -77,7 +77,7 @@ const Nav = () => {
 
             <nav
                 ref={navRef}
-                className={`bg-cream fixed top-0 right-0 left-0 z-40 h-screen w-full text-black ${
+                className={`bg-cream fixed top-0 right-0 left-0 z-40 h-screen w-full ${
                     isOpen ? "pointer-events-auto" : "pointer-events-none"
                 }`}
                 style={{ opacity: 0, transform: "translateY(-2000px)" }}
