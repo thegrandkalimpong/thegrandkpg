@@ -21,7 +21,7 @@ export default function Home() {
         <div className="relative">
             <section
                 id="home"
-                className="relative -top-24 left-0 z-50 flex min-h-screen w-full items-center justify-center px-0"
+                className="relative -top-24 left-0 z-50 flex min-h-screen w-full max-w-none items-center justify-center px-0"
             >
                 <Heading />
                 <video

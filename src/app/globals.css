@@ -44,20 +44,32 @@
         @apply container mx-auto;
     }
     section {
-        @apply mx-auto px-6 py-12 md:px-8 lg:px-12;
+        @apply mx-auto max-w-6xl px-6 py-12 md:px-8 lg:px-12;
     }
 
     button {
         @apply cursor-pointer;
     }
 
+    .btn-primary {
+        @apply bg-moss text-cream hover:bg-moss-light px-4 py-2 font-semibold shadow-md transition duration-200;
+    }
+
     h1 {
-        @apply font-mageline text-moss mb-4 text-center text-5xl font-bold lg:text-6xl;
+        @apply font-mageline text-moss-light mb-4 text-center text-5xl font-bold lg:text-6xl;
     }
 
     h2 {
-        @apply font-mageline text-moss mb-4 text-center text-4xl font-bold;
+        @apply font-mageline text-moss-light mb-4 text-center text-4xl font-bold;
     }
+
+    h3 {
+        @apply font-mageline text-moss-light mb-4 text-center text-3xl font-bold;
+    }
+
+    /* p {
+        @apply indent-8;
+    } */
 
     label {
         @apply text-cream mb-4 block text-lg;
@@ -70,6 +82,20 @@
 
     .submit-button {
         @apply text-cream w-full bg-[hsl(115,40%,30%)] p-4 hover:bg-[hsl(115,40%,35%)] focus:ring-4 focus:outline-none;
+    }
+
+    .room-features-container {
+        @apply grid grid-cols-1 grid-rows-3 gap-4 text-center;
+
+        .room-features {
+            @apply bg-moss-light text-cream flex h-full w-full flex-col items-center justify-center gap-2 py-6;
+            .title {
+                @apply text-lg font-semibold;
+            }
+            .description {
+                @apply opacity-80;
+            }
+        }
     }
 }
 

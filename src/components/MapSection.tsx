@@ -11,7 +11,7 @@ const MapSection = () => {
             <div className="flex flex-col gap-8 lg:flex-row">
                 <Map />
                 <div className="basis-1/2">
-                    <p>
+                    <p className="mb-16 indent-8">
                         Tucked close to Kalimpong&apos;s most loved spots, The
                         Grand Kalimpong makes it easy to explore the charm of
                         the hills. Take a peaceful walk to the Tharpa Choling
@@ -20,15 +20,22 @@ const MapSection = () => {
                         trails to bustling local markets, all your adventures
                         start just a few steps away.
                     </p>
-                    {/* <div className="text-moss-dark flex w-full flex-col items-center justify-between gap-0.5 py-4 font-medium md:flex-row"> */}
-                    <p className="my-8">
-                        <MapPin className="mr-2 mb-2 inline md:mb-0" /> Chibbo
-                        Approach Road, Kalimpong, 734301
-                    </p>
-                    <p>
-                        <Phone className="mr-2 mb-2 inline md:mb-0" />{" "}
-                        9064502191 / 8697719179 / 9832081553{" "}
-                    </p>
+                    <div className="mb-4 flex items-center gap-2">
+                        <div className="bg-moss-light aspect-square rounded-full p-2">
+                            <MapPin className="text-cream" />
+                        </div>
+                        <p className="">
+                            Chibbo Approach Road, Kalimpong, 734301
+                        </p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <div className="bg-moss-light aspect-square rounded-full p-2">
+                            <Phone className="text-cream" />
+                        </div>
+                        <p className="">
+                            9064502191 / 8697719179 / 9832081553{" "}
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>

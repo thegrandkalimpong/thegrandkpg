@@ -36,7 +36,7 @@ const Heading = () => {
                     Kalimpong
                 </span>
             </h1>
-            <h2 className="font-roboto mt-12 text-center tracking-[15px] text-white/70 uppercase">
+            <h2 className="font-poppins mt-12 text-center font-light tracking-[15px] text-white/90 uppercase">
                 Your Holiday destination
             </h2>
         </div>

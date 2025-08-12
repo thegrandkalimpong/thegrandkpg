@@ -64,7 +64,7 @@ const GalleryImage = () => {
     }, [selectedImage, currentIndex, filteredImages]);
 
     return (
-        <section>
+        <section className="max-w-7xl">
             <h1 className="">Gallery</h1>
             <p className="mx-auto mb-16 max-w-2xl text-center">
                 Step inside and explore the beauty of{" "}
