@@ -21,6 +21,7 @@
     --font-mageline: "Mageline", sans-serif;
     --font-poppins: "Poppins", sans-serif;
     --font-roboto: "Roboto", sans-serif;
+    --font-caveat: "Caveat", cursive;
 }
 
 @utility h-hero {
@@ -49,8 +50,29 @@
     button {
         @apply cursor-pointer;
     }
+
+    h1 {
+        @apply font-mageline text-moss mb-4 text-center text-5xl font-bold lg:text-6xl;
+    }
+
+    h2 {
+        @apply font-mageline text-moss mb-4 text-center text-4xl font-bold;
+    }
+
+    label {
+        @apply text-cream mb-4 block text-lg;
+    }
+
+    input,
+    textarea {
+        @apply bg-cream text-moss-dark placeholder:text-moss-light caret-moss-light mb-4 w-full p-4 focus:ring-4 focus:ring-[hsl(115,40%,40%)] focus:outline-none;
+    }
+
+    .submit-button {
+        @apply text-cream w-full bg-[hsl(115,40%,30%)] p-4 hover:bg-[hsl(115,40%,35%)] focus:ring-4 focus:outline-none;
+    }
 }
 
-.font-handwriting {
-    font-family: "Caveat", cursive;
+@utility font-handwriting {
+    @apply font-caveat;
 }

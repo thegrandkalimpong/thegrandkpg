@@ -65,9 +65,7 @@ const GalleryImage = () => {
 
     return (
         <section>
-            <h1 className="font-mageline text-greenish mb-4 text-center text-5xl font-bold lg:text-6xl">
-                Gallery
-            </h1>
+            <h1 className="">Gallery</h1>
             <p className="mx-auto mb-16 max-w-2xl text-center">
                 Step inside and explore the beauty of{" "}
                 <strong>The Grand Kalimpong</strong>. From cozy rooms and lush

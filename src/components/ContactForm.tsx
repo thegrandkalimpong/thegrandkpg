@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef } from "react";
 
 const ContactForm = () => {
     const [result, setResult] = useState("");
@@ -24,7 +24,7 @@ const ContactForm = () => {
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                body: formData
+                body: formData,
             });
 
             const data = await response.json();
@@ -43,29 +43,61 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="bg-greenish ">
-            <div className="max-w-3xl mx-auto pb-18 px-6">
-                <h2 className="text-cream font-mageline text-5xl font-semibold mb-6">Contact Form</h2>
-                <form ref={formRef} className="space-y-4" onSubmit={handleSubmit}>
+        <section className="bg-greenish">
+            <div className="mx-auto max-w-3xl px-6 pb-18">
+                <h2 className="text-cream mb-6">Have a question? Reach out!</h2>
+                <form
+                    ref={formRef}
+                    className="space-y-4"
+                    onSubmit={handleSubmit}
+                >
                     <div>
-                        <label className="block text-cream mb-2" htmlFor="name">Name</label>
-                        <input type="text" id="name" name="name" required className="w-full p-4  bg-cream text-moss-dark focus:outline-none focus:ring-4 focus:ring-cream/20" placeholder="Your Name"
+                        <label htmlFor="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            className=""
+                            placeholder="Your Name"
                         />
                     </div>
                     <div>
-                        <label className="block text-cream mb-2" htmlFor="name">Mobile</label>
-                        <input type="text" id="name" name="name" className="w-full p-4  bg-cream text-moss-dark focus:outline-none focus:ring-4 focus:ring-cream/20" placeholder="Your Mobile Number"
+                        <label htmlFor="name">Mobile</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            className=""
+                            placeholder="Your Mobile Number"
                         />
                     </div>
                     <div>
-                        <label className="block text-cream mb-2" htmlFor="email">Email</label>
-                        <input type="email" id="email" name="email" className="w-full p-4  bg-cream text-moss-dark focus:outline-none focus:ring-4 focus:ring-cream/20" placeholder="Your Email" />
+                        <label htmlFor="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            className=""
+                            placeholder="Your Email"
+                        />
                     </div>
                     <div>
-                        <label className="block text-cream mb-2" htmlFor="message">Message</label>
-                        <textarea id="message" name="message" rows={4} required className="w-full p-4  bg-cream focus:outline-none focus:ring-4 focus:ring-cream/20 text-moss-dark" placeholder="Your Message"></textarea>
+                        <label htmlFor="message">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows={4}
+                            required
+                            className=""
+                            placeholder="Your Message"
+                        ></textarea>
                     </div>
-                    <button type="submit" disabled={isSubmitting} className="bg-[hsl(115,40%,45%)] text-cream px-4 py-2 hover:bg-cream/90 hover:text-moss-dark transition-colors font-semibold">
+                    <button
+                        type="submit"
+                        className="submit-button"
+                        disabled={isSubmitting}
+                    >
                         {isSubmitting ? "Sending..." : "Send Message"}
                     </button>
                 </form>
@@ -73,6 +105,6 @@ const ContactForm = () => {
             </div>
         </section>
     );
-}
+};
 
 export default ContactForm;

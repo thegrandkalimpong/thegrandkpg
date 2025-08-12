@@ -11,13 +11,11 @@ const page = () => {
         <section className="pt-0">
             <div className="bg-greenish h-full min-h-svh w-full px-6 py-24">
                 <div className="mx-auto flex h-full w-full max-w-3xl flex-col items-start justify-center gap-4 px-4 text-left">
-                    <p className="text-cream text-xl font-semibold">
-                        Get in Touch With Us
-                    </p>
-                    <h1 className="font-mageline text-cream mt-4 text-5xl font-bold">
+                    <h1 className="text-cream">Get in Touch With Us</h1>
+                    <p className="text-cream mt-4 mb-4 text-xl font-semibold">
                         {/* Contact us today to learn more about our resort. */}
                         We&apos;re Here to Help You Plan the Perfect Stay
-                    </h1>
+                    </p>
 
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
                     <div className="text-cream flex w-full flex-col items-center justify-between gap-0.5 py-4 font-medium md:flex-row">
