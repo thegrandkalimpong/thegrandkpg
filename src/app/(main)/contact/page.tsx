@@ -15,7 +15,9 @@ const page = () => {
                         Get in Touch With Us
                     </p>
                     <h1 className="font-mageline text-cream mt-4 text-5xl font-bold">
-                        Contact us today to learn more about our resort.
+                        {/* Contact us today to learn more about our resort. */}
+                        We&apos;re Here to Help You Plan the Perfect Stay
+
                     </h1>
 
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
@@ -54,13 +56,13 @@ const page = () => {
 
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
                     <p className="text-cream py-4">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Exercitationem, unde quaerat. Vel quas quasi
-                        corrupti aut ducimus commodi facere, deserunt eaque
-                        laborum nemo dolore dolorum minima error fugiat optio
-                        molestiae ad? Assumenda illum repellat molestiae eaque
-                        asperiores animi aperiam laborum nesciunt, dignissimos,
-                        sequi eius velit odio magnam tenetur perferendis nobis?
+                        Whether you&apos;re ready to book your next getaway, have questions about our
+                        rooms, or need help planning a special event, our team at
+                        <strong> The Grand Kalimpong </strong> is here for you.&nbsp;
+                        Reach out by phone, WhatsApp, or email&mdash;we&apos;ll respond promptly and
+                        make sure your experience is as smooth and enjoyable as your stay with us.
+                        From the moment you contact us to the day you check out, we&apos;re dedicated
+                        to creating unforgettable memories for you.
                     </p>
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
                 </div>

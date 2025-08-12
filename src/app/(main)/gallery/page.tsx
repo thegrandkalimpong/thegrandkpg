@@ -1,4 +1,4 @@
-import GalleryImage from "@/components/Gallyer";
+import GalleryImage from "@/components/Gallery";
 import React from "react";
 
 export const metadata = {

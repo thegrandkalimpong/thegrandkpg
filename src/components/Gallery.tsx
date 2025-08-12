@@ -69,19 +69,18 @@ const GalleryImage = () => {
                 Gallery
             </h1>
             <p className="mx-auto mb-16 max-w-2xl text-center">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit,
-                itaque laboriosam aliquam voluptatem mollitia dolore quidem
-                nesciunt molestias laudantium totam fugit quis ipsa velit.
+                Step inside and explore the beauty of <strong>The Grand Kalimpong</strong>.
+                From cozy rooms and lush gardens to breathtaking views and mouthwatering cuisine,
+                every image captures a moment worth remembering.
             </p>
             <div className="mb-8 flex flex-wrap justify-center gap-2">
                 {filters.map((filter) => (
                     <button
                         key={filter}
-                        className={`mb-2 px-4 py-2 align-middle text-sm font-semibold tracking-widest uppercase transition-colors ${
-                            selectedFilter === filter
+                        className={`mb-2 px-4 py-2 align-middle text-sm font-semibold tracking-widest uppercase transition-colors ${selectedFilter === filter
                                 ? "bg-moss-light text-cream"
                                 : "hover:bg-greenish bg-cream text-black hover:text-white"
-                        }`}
+                            }`}
                         onClick={() => setSelectedFilter(filter)}
                     >
                         {filter}
