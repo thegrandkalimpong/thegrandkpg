@@ -1,6 +1,7 @@
 import React from "react";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
+import { contact } from "@/data/data";
 
 export const metadata = {
     title: "Contact Us",
@@ -26,7 +27,7 @@ const page = () => {
                                 (Mon - Sun: 8:00 - 22:00)
                             </p>
                         </div>
-                        <a href="tel:">+91 1234567890</a>
+                        <a href={`tel:${contact.phone}`}>{contact.phone}</a>
                     </div>
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
                     <div className="text-cream flex w-full flex-col items-center justify-between gap-0.5 py-4 font-medium md:flex-row">
@@ -37,8 +38,8 @@ const page = () => {
                                 (Mon - Sun: 8:00 - 22:00)
                             </p>
                         </div>
-                        <a href="https://wa.me/+91 1234567890" target="_blank">
-                            +91 1234567890
+                        <a href={`https://wa.me/${contact.whatsapp}`} target="_blank">
+                            {contact.whatsapp}
                         </a>
                     </div>
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />
@@ -50,7 +51,9 @@ const page = () => {
                                 Response time approx. 4 hours
                             </p>
                         </div>
-                        <a href="mailto:">gdk@gmail.com</a>
+                        <a href={`mailto:${contact.email}`}>
+                            {contact.email}
+                        </a>
                     </div>
 
                     <hr className="bg-cream h-0.5 w-full border-0 opacity-20" />

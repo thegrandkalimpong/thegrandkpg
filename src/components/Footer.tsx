@@ -10,7 +10,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { footerData } from "@/data/data";
+import { contact, footerData } from "@/data/data";
 
 const navLinks: {
     id: number;
@@ -90,15 +90,15 @@ const Footer = () => {
                             <div className="flex items-center justify-center md:justify-start">
                                 <Phone className="text-cream/80 mr-3 h-5 w-5 flex-shrink-0" />
                                 <span className="text-cream/70">
-                                    <a href={`tel:${footerData.contact.phone}`}>{footerData.contact.phone}</a>
+                                    <a href={`tel:${contact.phone}`}>{contact.phone}</a>
                                 </span>
                             </div>
                             <div className="flex items-center justify-center md:justify-start">
                                 <Mail className="text-cream/80 mr-3 h-5 w-5 flex-shrink-0" />
-                                <span className="text-cream/70 break-all whitespace-normal ">
-                                    <a href={`mailto:${footerData.contact.email}`}> 
+                                <span className="text-cream/70 md:break-all whitespace-normal ">
+                                    <a href={`mailto:${contact.email}`}> 
                                         
-                                        {footerData.contact.email}
+                                        {contact.email}
                                     </a>
                                 </span>
                             </div>
@@ -106,9 +106,9 @@ const Footer = () => {
                                 <MapPin className="text-cream/80 mt-0.5 mr-3 h-5 w-5 flex-shrink-0" />
                                 <span className="text-cream/70">
 
-                                    {footerData.address.line1}
+                                    {contact.address.line1}
                                     <br />
-                                    {footerData.address.line2}
+                                    {contact.address.line2}
                                 </span>
                             </div>
                         </div>
