@@ -33,8 +33,8 @@ const Footer = () => {
                 <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
                     {/* Brand Section */}
                     <div className="md:col-span-2">
-                        <div className="flex flex-col items-center space-y-4 lg:items-start">
-                            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white">
+                        <div className="flex flex-col items-center space-y-6 lg:items-start ">
+                            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white ">
                                 <div className="">
                                     {/* <span className="text-lg font-bold text-white">
                                         TGK
@@ -51,7 +51,7 @@ const Footer = () => {
                                 </div>
                             </div>
                             <div className="text-center md:text-left">
-                                <h2 className="text-cream lg:text-left mb-2 text-2xl font-bold lg:text-3xl">
+                                <h2 className="text-cream lg:text-left mb-3 text-2xl font-bold lg:text-3xl">
                                     The Grand Kalimpong
                                 </h2>
                                 <p className="text-cream/70 max-w-md leading-relaxed">
@@ -95,11 +95,10 @@ const Footer = () => {
                             </div>
                             <div className="flex items-center justify-center md:justify-start">
                                 <Mail className="text-cream/80 mr-3 h-5 w-5 flex-shrink-0" />
-                                <span className="text-cream/70">
+                                <span className="text-cream/70 break-all whitespace-normal ">
                                     <a href={`mailto:${footerData.contact.email}`}> 
-                                        <span>
+                                        
                                         {footerData.contact.email}
-                                        </span>
                                     </a>
                                 </span>
                             </div>
