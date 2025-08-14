@@ -162,7 +162,7 @@ const OurHotelPage = () => {
                         alt="Decorative Element"
                         width={50}
                         height={50}
-                        className="text-moss-light ml-8 h-8 w-16"
+                        className="text-moss-light ml-2 -rotate-3 h-8 w-16"
                     />
                 </div>
             </div>

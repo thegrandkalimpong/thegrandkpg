@@ -75,11 +75,7 @@ export const roomImages: TRoomImage[] = [
         src: "/assets/garden2.webp",
         category: "garden",
     },
-    {
-        id: "15",
-        src: "/assets/garden3.webp",
-        category: "garden",
-    },
+
     // Gate image
     {
         id: "16",
@@ -143,5 +139,61 @@ export const roomImages: TRoomImage[] = [
         id: "27",
         src: "/assets/room9.webp",
         category: "room",
+    },
+    {
+        id: "28",
+        src: "/assets/room10.webp",
+        category: "room",
+    },
+    {
+        id: "29",
+        src: "/assets/room11.webp",
+        category: "room",
+    },
+    //view images
+    {
+        id: "30",
+        src: "/assets/view1.webp",
+        category: "view",
+    },
+    {
+        id: "31",
+        src: "/assets/view2.webp",
+        category: "view",
+    },
+    {
+        id: "32",
+        src: "/assets/view3.webp",
+        category: "view",
+    },
+    {
+        id: "33",
+        src: "/assets/view4.webp",
+        category: "view",
+    },
+    {
+        id: "34",
+        src: "/assets/view5.webp",
+        category: "view",
+    },
+    {
+        id: "35",
+        src: "/assets/view6.webp",
+        category: "view",
+    },
+    {
+        id: "36",
+        src: "/assets/view7.webp",
+        category: "view",
+    },
+    {
+        id: "37",
+        src: "/assets/view8.webp",
+        category: "hotel",
+    },
+    {
+        id: "38",
+        src: "/assets/view9.webp",
+        category: "hotel",
     },
 ];

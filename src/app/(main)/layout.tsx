@@ -7,6 +7,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
         <div>
             <Header />
             <main className="relative">{children}</main>
+            
             <Footer />
         </div>
     );

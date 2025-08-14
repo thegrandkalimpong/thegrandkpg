@@ -1,10 +1,12 @@
 "use client";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { AlignJustify, X } from "lucide-react";
+import { AlignJustify, Facebook, Instagram, Twitter, X } from "lucide-react";
 import Link from "next/link";
 import React, { useRef } from "react";
 import NavHamburger from "./NavHamburger";
+import { usePathname } from "next/navigation";
+import { contact } from "@/data/data";
 
 const Nav = () => {
     const [isOpen, setIsOpen] = React.useState(false);
@@ -64,11 +66,32 @@ const Nav = () => {
             onComplete: () => setIsOpen(false),
         });
     };
+    const pathname = usePathname();
 
     return (
-        <div>
+        <div className="flex ">
+            <div className="hidden md:flex items-center gap-6 ">
+                
+                <Link
+                    href={contact.socialLinks.facebook}
+                    target="_blank"
+                >
+                    <Facebook className={`${pathname === "/" ?'homepage-navbar-social':'navbar-social'} h-6 w-6`} />
+                </Link>
+                <Link
+                    href={contact.socialLinks.instagram}
+                    target="_blank"
+                >
+                    <Instagram className={`${pathname === "/" ? 'homepage-navbar-social' : 'navbar-social'} h-6 w-6`} />
+                </Link>
+                {/* <Link
+                    href={"/"}
+                >
+                    <Twitter className={`${pathname === "/" ? 'homepage-navbar-social' : 'navbar-social'} h-6 w-6`} />
+                </Link> */}
+            </div>
             <button
-                className={`text-greenish relative z-50 p-2 transition-transform hover:scale-110 ${isOpen ? "" : ""}`}
+                className={`text-greenish ml-6 relative z-50 p-2 transition-transform hover:scale-110 ${isOpen ? "" : ""}`}
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
             >
@@ -77,9 +100,8 @@ const Nav = () => {
 
             <nav
                 ref={navRef}
-                className={`bg-cream fixed top-0 right-0 left-0 z-40 h-screen w-full ${
-                    isOpen ? "pointer-events-auto" : "pointer-events-none"
-                }`}
+                className={`bg-cream fixed top-0 right-0 left-0 z-40 h-screen w-full ${isOpen ? "pointer-events-auto" : "pointer-events-none"
+                    }`}
                 style={{ opacity: 0, transform: "translateY(-2000px)" }}
             >
                 <div className="font-mageline flex h-full flex-col items-center justify-center gap-8 text-5xl">

@@ -97,8 +97,28 @@
             }
         }
     }
+
+    .social{
+        @apply bg-cream/10 hover:bg-cream/20 flex h-10 w-10 items-center justify-center rounded-full transition-colors duration-200;
+    }
 }
 
 @utility font-handwriting {
     @apply font-caveat;
+}
+
+
+@utility footer-social{
+    @apply bg-cream/10 hover:bg-cream/20 flex h-10 w-10 items-center justify-center rounded-full transition-colors duration-200 ;
+    svg{
+        @apply text-cream h-5 w-5;
+    }
+}
+@utility homepage-navbar-social{
+    @apply text-white hover:text-cream/80 transition-colors duration-200 ;
+   
+}
+@utility navbar-social{
+    @apply text-moss-light hover:text-moss-dark/80 transition-colors duration-200 ;
+   
 }

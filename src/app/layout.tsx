@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Caveat } from "next/font/google";
 import "./globals.css";
 import { GsapProvider } from "@/context/Provider";
+import WhatsApp from "@/components/WhatsApp";
 
 const poppins = Poppins({
     variable: "--font-poppins",
@@ -60,6 +61,7 @@ export default function RootLayout({
                     className={`${poppins.variable} ${caveat.variable} font-poppins bg-white antialiased`}
                 >
                     {children}
+                    <WhatsApp />
                 </body>
             </GsapProvider>
         </html>

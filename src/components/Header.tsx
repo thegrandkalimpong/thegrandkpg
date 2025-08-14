@@ -19,6 +19,7 @@ const Header = () => {
                         className="rounded-full bg-white p-2"
                     />
                 </Link>
+                
                 <Nav />
             </div>
         </header>

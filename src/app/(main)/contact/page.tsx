@@ -10,7 +10,7 @@ export const metadata = {
 const page = () => {
     return (
         <section className="max-w-none pt-0">
-            <div className="bg-greenish h-full min-h-svh w-full px-6 py-24">
+            <div className="bg-greenish w-full px-6 py-24">
                 <div className="mx-auto flex h-full w-full max-w-3xl flex-col items-start justify-center gap-4 px-4 text-left">
                     <h1 className="text-cream">Get in Touch With Us</h1>
                     <p className="text-cream mt-4 mb-4 text-xl font-semibold">

@@ -29,11 +29,11 @@ const Footer = () => {
     return (
         <footer className="bg-moss-dark text-cream relative z-20 mt-24">
             {/* Main Footer Content */}
-            <div className="relative z-10 mx-auto mb-12 max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
+            <div className="relative z-10 mx-auto mb-12 max-w-9xl px-4 sm:px-6 xl:px-8">
+                <div className="grid grid-cols-1 gap-8 py-12 xl:grid-cols-4">
                     {/* Brand Section */}
-                    <div className="md:col-span-2">
-                        <div className="flex flex-col items-center space-y-6 lg:items-start ">
+                    <div className="xl:col-span-2">
+                        <div className="flex flex-col items-center space-y-6 xl:items-start ">
                             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white ">
                                 <div className="">
                                     {/* <span className="text-lg font-bold text-white">
@@ -50,8 +50,8 @@ const Footer = () => {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="text-center md:text-left">
-                                <h2 className="text-cream lg:text-left mb-3 text-2xl font-bold lg:text-3xl">
+                            <div className="text-center xl:text-left">
+                                <h2 className="text-cream xl:text-left mb-3 text-2xl font-bold xl:text-3xl">
                                     The Grand Kalimpong
                                 </h2>
                                 <p className="text-cream/70 max-w-md leading-relaxed">
@@ -62,8 +62,8 @@ const Footer = () => {
                     </div>
 
                     {/* Quick Links */}
-                    <div className="text-center md:text-left ">
-                        <h3 className="text-cream ml-4 lg:text-left md:ml-5 mb-4 text-lg font-semibold">
+                    <div className="text-center xl:text-left ">
+                        <h3 className="text-cream xl:text-left mb-4 text-lg font-semibold">
                             Quick Links
                         </h3>
                         <ul className="space-y-4">
@@ -71,9 +71,8 @@ const Footer = () => {
                                 <li key={link.id}>
                                     <Link
                                         href={link.route}
-                                        className="text-cream/70 hover:text-cream group flex items-center justify-center transition-colors duration-200 lg:justify-start"
+                                        className="text-cream/70 hover:text-cream group flex items-center justify-center transition-colors duration-200 xl:justify-start"
                                     >
-                                        <ArrowRight className="mr-1 lg:mr-2 h-4 w-4 opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
                                         {link.label}
                                     </Link>
                                 </li>
@@ -82,30 +81,29 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Info */}
-                    <div className="text-center md:text-left ">
-                        <h3 className="text-cream md:text-left md:ml-8 lg:ml-9 mb-4 text-lg font-semibold">
+                    <div className="text-center xl:text-left ">
+                        <h3 className="text-cream xl:text-left xl:ml-9 mb-4 text-lg font-semibold">
                             Contact Info
                         </h3>
                         <div className="space-y-4">
-                            <div className="flex items-center justify-center md:justify-start">
+                            <div className="flex items-center justify-center xl:justify-start">
                                 <Phone className="text-cream/80 mr-3 h-5 w-5 flex-shrink-0" />
                                 <span className="text-cream/70">
                                     <a href={`tel:${contact.phone}`}>{contact.phone}</a>
                                 </span>
                             </div>
-                            <div className="flex items-center justify-center md:justify-start">
+                            <div className="flex items-center justify-center xl:justify-start">
                                 <Mail className="text-cream/80 mr-3 h-5 w-5 flex-shrink-0" />
-                                <span className="text-cream/70 md:break-all whitespace-normal ">
+                                <span className="text-cream/70 break-all whitespace-normal ">
                                     <a href={`mailto:${contact.email}`}> 
                                         
                                         {contact.email}
                                     </a>
                                 </span>
                             </div>
-                            <div className="flex items-start justify-center md:justify-start">
-                                <MapPin className="text-cream/80 mt-0.5 mr-3 h-5 w-5 flex-shrink-0" />
-                                <span className="text-cream/70">
-
+                            <div className="flex items-start justify-center xl:justify-start">
+                                <MapPin className="text-cream/80 mt-0.5 mr-3 h-5 w-5 flex-shrink-0 " />
+                                <span className="text-cream/70 ">
                                     {contact.address.line1}
                                     <br />
                                     {contact.address.line2}
@@ -123,16 +121,16 @@ const Footer = () => {
                         </span>
                         <div className="flex space-x-4">
                             <a
-                                href={`${footerData.socialLinks.facebook}`}
-                                className="bg-cream/10 hover:bg-cream/20 flex h-10 w-10 items-center justify-center rounded-full transition-colors duration-200"
+                                href={`${contact.socialLinks.facebook}`}
+                                className="footer-social"
                             >
-                                <Facebook className="text-cream h-5 w-5" />
+                                <Facebook />
                             </a>
                             <a
-                                href={`${footerData.socialLinks.instagram}`}
-                                className="bg-cream/10 hover:bg-cream/20 flex h-10 w-10 items-center justify-center rounded-full transition-colors duration-200"
+                                href={`${contact.socialLinks.instagram}`}
+                                className="footer-social"
                             >
-                                <Instagram className="text-cream h-5 w-5" />
+                                <Instagram className="" />
                             </a>
                         </div>
                     </div>
@@ -150,7 +148,7 @@ const Footer = () => {
 
             {/* Developer Credit */}
             <div className="absolute right-0 bottom-0 left-0 bg-black py-4">
-                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 xl:px-8">
                     <p className="text-cream/50 text-center text-sm">
                         Designed and Developed by{" "}
                         <a
