@@ -9,7 +9,7 @@ const WhatsApp = () => {
       prefetch={false}
       target='_blank'
       className='flex items-center justify-center fixed bottom-8 right-8 z-30 rounded-full bg-white overflow-hidden shadow-md p-1 size-[60px] hover:scale-110 hover:shadow-lg transition-transform duration-300 ease-in-out'>
-      <Image unoptimized height={50} width={50} className='h-[48px] w-[48px]' src="/whatsapp.gif" alt="" />
+      <Image unoptimized height={50} width={50} className='h-[36px] w-[36px]' src="/whatsapp.svg" alt="" />
     </Link>
   )
 }

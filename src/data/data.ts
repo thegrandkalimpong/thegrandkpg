@@ -37,3 +37,24 @@ export const homePageData = {
             "Nestled in the heart of Kalimpong, our property blends timeless charm with modern comfort, offeringyou a peaceful retreat surrounded by breathtaking views. Whether you&apos;re here to unwind,celebrate, or explore, our team is dedicated to providing warm hospitality, personalized service,and thoughtful touches that make you feel right at home.",
     },
 };
+
+export const roomData = [
+    {
+        title: "Deluxe Room",
+        description: "A spacious room with a king-sized bed, offering stunning views of the mountains.",
+        amenities: ["Free Wi-Fi", "Air Conditioning", "Flat-screen TV"],
+        price: 150,
+    },
+    {
+        title: "Super Deluxe Room",
+        description: "An elegant room with a private balcony, perfect for enjoying the sunrise.",
+        amenities: ["Free Wi-Fi", "Air Conditioning", "Flat-screen TV", "Mini Bar", "Jacuzzi"],
+        price: 200,
+    },
+    {
+        title: "Family Suite",
+        description: "A large suite with two bedrooms, ideal for families or groups.",
+        amenities: ["Free Wi-Fi", "Air Conditioning", "Flat-screen TV", "Mini Bar", "Living Area"],
+        price: 300,
+    },
+];
