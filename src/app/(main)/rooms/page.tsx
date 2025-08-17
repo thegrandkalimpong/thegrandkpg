@@ -1,6 +1,5 @@
 import ImageFrame from "@/components/ImageFrame";
 import { roomData } from "@/data/data";
-import Image from "next/image";
 import React from "react";
 
 export const metadata = {

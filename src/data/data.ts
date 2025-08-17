@@ -4,7 +4,7 @@ export const footerData = {
         alt: "The Grand Kalimpong Logo",
     },
     description:
-        "Experience the serene beauty of the Himalayas with luxury accommodations,breathtaking views, and warm hospitality in the heart of Kalimpong.",
+        "Experience the serene beauty of the Himalayas with luxury accommodations, breathtaking views, and warm hospitality in the heart of Kalimpong.",
 
     socialLinks: {
         facebook: "https://www.facebook.com/",
@@ -19,13 +19,14 @@ export const contact = {
     whatsapp: "+919064502191",
     email: "thegrandkalimpong@gmail.com",
     address: {
-        line1: "Chibbo Approach Rd, Kalimpong Khasmahal",
+        line1: "Chibbo Approach Rd, Kalimpong Khasmahal Kalimpong, West Bengal 734301",
         line2: "Kalimpong, West Bengal 734301",
     },
     socialLinks: {
-        facebook:"https://www.facebook.com/people/Thegrand-Kalimpong/61569512931436/#",
+        facebook:
+            "https://www.facebook.com/people/Thegrand-Kalimpong/61569512931436/#",
         instagram: "https://www.instagram.com/the_grand_kalimpong/",
-        youtube:"https://youtube.com/@thegrandkalimpong?si=ozu2rqH2Pt-yr8QC"
+        youtube: "https://youtube.com/@thegrandkalimpong?si=ozu2rqH2Pt-yr8QC",
     },
 };
 
@@ -43,19 +44,36 @@ export const roomData = [
     {
         title: "Standard Room",
         description: "A cozy room with a beautiful balcony.",
-        amenities: ["Free Wi-Fi", "Complimentary Breakfast", "Flat-screen TV", "Private Balcony"],
-        src:"/assets/room6.jpg"
+        amenities: [
+            "Free Wi-Fi",
+            "Complimentary Breakfast",
+            "Flat-screen TV",
+            "Private Balcony",
+        ],
+        src: "/assets/room13standard.jpg",
     },
     {
         title: "Deluxe Room",
-        description: "A spacious room with a king-sized bed, offering stunning views of the mountains.",
-        amenities: ["Free Wi-Fi", "Complimentary Breakfast", "Flat-screen TV", "Beverages"],
-        src:"/assets/room1.webp"
+        description:
+            "A spacious room with a king-sized bed, offering stunning views of the mountains.",
+        amenities: [
+            "Free Wi-Fi",
+            "Complimentary Breakfast",
+            "Flat-screen TV",
+            "Beverages",
+        ],
+        src: "/assets/room12delux.jpg",
     },
     {
         title: "Family Room",
-        description: "An elegant room with a private balcony, perfect for enjoying the sunrise.",
-        amenities: ["Free Wi-Fi", "Complimentary Breakfast", "Flat-screen TV", "Beverages"],
-        src:"/assets/room7.webp"
+        description:
+            "An elegant room with a private balcony, perfect for enjoying the sunrise.",
+        amenities: [
+            "Free Wi-Fi",
+            "Complimentary Breakfast",
+            "Flat-screen TV",
+            "Beverages",
+        ],
+        src: "/assets/room7.webp",
     },
 ];

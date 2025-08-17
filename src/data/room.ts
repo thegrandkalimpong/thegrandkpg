@@ -16,11 +16,11 @@ export const roomImages: TRoomImage[] = [
         src: "/assets/balcony3.webp",
         category: "room",
     },
-    {
-        id: "4",
-        src: "/assets/balcony4.webp",
-        category: "room",
-    },
+    // {
+    //     id: "4",
+    //     src: "/assets/balcony4.webp",
+    //     category: "room",
+    // },
     // BBQ images
     {
         id: "5",

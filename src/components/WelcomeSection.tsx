@@ -38,10 +38,10 @@ const WelcomeSection = () => {
                         </p>
                     </div>
 
-                    <div className="pt-8">
+                    <div className="">
                         <Link
                             href="/contact"
-                            className="btn-primary group inline-flex items-center"
+                            className="btn-primary group inline-flex items-center text-xl"
                         >
                             Contact Us
                             <svg
