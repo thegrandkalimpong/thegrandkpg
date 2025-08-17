@@ -44,8 +44,8 @@ const ContactForm = () => {
 
     return (
         <section className="bg-greenish mt-24 max-w-none">
-            <div className="mx-auto max-w-3xl px-6 pb-18">
-                <h2 className="text-cream mb-6">Have a question? Reach out!</h2>
+            <div className="mx-auto max-w-3xl px-6 py-18">
+                <h2 className="text-cream mb-16">Have a question? Reach out!</h2>
                 <form
                     ref={formRef}
                     className="space-y-4"
