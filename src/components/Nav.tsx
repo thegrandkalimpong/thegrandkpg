@@ -104,7 +104,7 @@ const Nav = () => {
                     }`}
                 style={{ opacity: 0, transform: "translateY(-2000px)" }}
             >
-                <div className="font-mageline flex h-full flex-col items-center justify-center gap-8 text-5xl">
+                <div className="font-mageline flex h-full flex-col items-center justify-center gap-8 text-4xl">
                     <NavLink href="/" label="Home" toggleMenu={toggleMenu} />
                     <NavLink
                         href="/our-hotel"

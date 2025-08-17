@@ -3,8 +3,8 @@ import React from 'react'
 const ActivitiesPage = () => {
   return (
     <section>
-        <h1>Activities</h1>
-        <ul>
+        <h1 className='mt-12'>Activities</h1>
+        <ul className='activities mt-16'>
             <li>BBQ</li>
             <li>Badminton</li>
             <li>Trekking</li>
