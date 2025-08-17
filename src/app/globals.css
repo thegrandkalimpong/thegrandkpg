@@ -126,9 +126,9 @@
 .activities{
     @apply flex flex-col gap-4 ;
     li{
-        @apply bg-moss-light text-cream p-8 text-2xl flex items-center justify-center;
+        @apply bg-moss-light hover:bg-moss-dark text-cream p-8 text-3xl flex items-center justify-center;
     }
     /* odd */
     li:nth-child(odd) {
-        @apply bg-moss;
+        @apply bg-moss hover:bg-moss-dark;
     }}
