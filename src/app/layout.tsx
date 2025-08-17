@@ -3,6 +3,7 @@ import { Poppins, Caveat } from "next/font/google";
 import "./globals.css";
 import { GsapProvider } from "@/context/Provider";
 import WhatsApp from "@/components/WhatsApp";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const poppins = Poppins({
     variable: "--font-poppins",
@@ -62,6 +63,7 @@ export default function RootLayout({
                 >
                     {children}
                     <WhatsApp />
+                    <ScrollToTop />
                 </body>
             </GsapProvider>
         </html>
