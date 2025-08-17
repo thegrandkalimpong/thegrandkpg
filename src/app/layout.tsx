@@ -4,6 +4,7 @@ import "./globals.css";
 import { GsapProvider } from "@/context/Provider";
 import WhatsApp from "@/components/WhatsApp";
 import ScrollToTop from "@/components/ScrollToTop";
+import Call from "@/components/Call";
 
 const poppins = Poppins({
     variable: "--font-poppins",
@@ -63,6 +64,7 @@ export default function RootLayout({
                 >
                     {children}
                     <WhatsApp />
+                    <Call />
                     <ScrollToTop />
                 </body>
             </GsapProvider>

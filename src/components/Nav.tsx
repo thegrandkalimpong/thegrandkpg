@@ -122,6 +122,11 @@ const Nav = () => {
                         toggleMenu={toggleMenu}
                     />
                     <NavLink
+                        href="/activities"
+                        label="Activities"
+                        toggleMenu={toggleMenu}
+                    />
+                    <NavLink
                         href="/contact"
                         label="Contact Us"
                         toggleMenu={toggleMenu}
