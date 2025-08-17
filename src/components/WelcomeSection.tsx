@@ -62,7 +62,7 @@ const WelcomeSection = () => {
                 </div>
                 <div className="order-0 w-full lg:order-1">
                     <ImageFrame
-                        src={"/assets/room1.webp"}
+                        src={"/aboutUs.jpg"}
                         alt="Welcome to The Grand Kalimpong"
                         className="h-96 w-full object-cover"
                     />

@@ -195,4 +195,44 @@ export const roomImages: TRoomImage[] = [
         src: "/assets/view9.webp",
         category: "hotel",
     },
+    {
+        id: "39",
+        src: "/assets/garden3.jpg",
+        category: "garden",
+    },
+    {
+        id: "40",
+        src: "/assets/garden4.jpg",
+        category: "garden",
+    },
+    {
+        id: "41",
+        src: "/assets/garden5.jpg",
+        category: "garden",
+    },
+    {
+        id: "42",
+        src: "/assets/garden7.jpg",
+        category: "garden",
+    },
+    {
+        id: "43",
+        src: "/assets/garden8.jpg",
+        category: "garden",
+    },
+    {
+        id: "44",
+        src: "/assets/garden9.jpg",
+        category: "garden",
+    },
+    {
+        id: "45",
+        src: "/assets/garden10.jpg",
+        category: "garden",
+    },
+    {
+        id: "46",
+        src: "/assets/garden11.jpg",
+        category: "garden",
+    },
 ];

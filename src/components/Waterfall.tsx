@@ -23,7 +23,7 @@ const Waterfall = () => {
             {/* <div className="w-full bg-moss-light">k</div> */}
             <div className="bg-moss-light order-4 aspect-square h-full w-full md:order-none md:row-span-3">
                 <ImageFrame
-                    src="/assets/view9.webp"
+                    src="/assets/garden3.jpg"
                     className="h-full w-full"
                 />
             </div>
