@@ -24,18 +24,18 @@ const OurHotelPage = () => {
                     Nestled in the peaceful hills of Kalimpong, The Grand
                     Kalimpong is your home away from home. Whether you&apos;re
                     here to unwind in nature or explore the charming town, our
-                    cosy 5-room hotel promises a relaxing and memorable stay.
+                    cosy hotel promises a relaxing and memorable stay.
                 </p>
             </div>
 
-            <div className="text-cream mx-auto mt-24 grid max-w-6xl grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="text-cream mx-auto mt-24 grid max-w-6xl grid-cols-1 gap-4 p-4 sm:grid-cols-2 lg:grid-cols-5">
                 {amenities.map((amenity, idx) => (
                     <div key={idx} className="bg-moss-light gap-4 p-8 sm:p-6">
                         <amenity.Icon className="mx-auto mb-4 h-8 w-8 sm:mx-0" />
-                        <h4 className="text-center text-lg font-medium sm:text-left">
+                        <h4 className="text-center text-base font-medium sm:text-left">
                             {amenity.title}
                         </h4>
-                        <p className="text-cream/70 text-center text-sm font-semibold capitalize sm:text-left">
+                        <p className="text-cream/70 text-center text-xs font-semibold capitalize sm:text-left">
                             {amenity.description}
                         </p>
                     </div>

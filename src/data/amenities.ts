@@ -1,6 +1,12 @@
-import { Bath, Bed, Bubbles, CableCar, Coffee, Tv, UtensilsCrossed, Wifi } from "lucide-react";
+import { Banana, Bath, Bed, Bubbles, CableCar, Car, Coffee, Tv, UtensilsCrossed, Wifi } from "lucide-react";
 
 export const amenities = [
+    {
+        id: 9,
+        title: "Complementary Breakfast",
+        description: "",
+        Icon: Banana,
+    },
     {
         id: 1,
         title: "Wi-Fi",
@@ -48,5 +54,10 @@ export const amenities = [
         title: "Buffet Service",
         description: "At dining area",
         Icon: UtensilsCrossed,
-    },
+    },{
+        id: 10,
+        title: "Free Parking",
+        description: "",
+        Icon: Car,
+    }
 ];

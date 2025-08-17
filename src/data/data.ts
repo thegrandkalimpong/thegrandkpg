@@ -41,17 +41,21 @@ export const homePageData = {
 
 export const roomData = [
     {
+        title: "Standard Room",
+        description: "A cozy room with a beautiful balcony.",
+        amenities: ["Free Wi-Fi", "Complimentary Breakfast", "Flat-screen TV", "Private Balcony"],
+        src:"/assets/room6.jpg"
+    },
+    {
         title: "Deluxe Room",
         description: "A spacious room with a king-sized bed, offering stunning views of the mountains.",
         amenities: ["Free Wi-Fi", "Complimentary Breakfast", "Flat-screen TV", "Beverages"],
         src:"/assets/room1.webp"
-        // price: 150,
     },
     {
         title: "Family Room",
         description: "An elegant room with a private balcony, perfect for enjoying the sunrise.",
         amenities: ["Free Wi-Fi", "Complimentary Breakfast", "Flat-screen TV", "Beverages"],
         src:"/assets/room7.webp"
-        // price: 200,
     },
 ];
