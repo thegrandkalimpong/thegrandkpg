@@ -25,6 +25,7 @@ export const contact = {
     socialLinks: {
         facebook:"https://www.facebook.com/people/Thegrand-Kalimpong/61569512931436/#",
         instagram: "https://www.instagram.com/the_grand_kalimpong/",
+        youtube:"https://youtube.com/@thegrandkalimpong?si=ozu2rqH2Pt-yr8QC"
     },
 };
 
@@ -42,19 +43,15 @@ export const roomData = [
     {
         title: "Deluxe Room",
         description: "A spacious room with a king-sized bed, offering stunning views of the mountains.",
-        amenities: ["Free Wi-Fi", "Air Conditioning", "Flat-screen TV"],
-        price: 150,
+        amenities: ["Free Wi-Fi", "Complimentary Breakfast", "Flat-screen TV", "Beverages"],
+        src:"/assets/room1.webp"
+        // price: 150,
     },
     {
-        title: "Super Deluxe Room",
+        title: "Family Room",
         description: "An elegant room with a private balcony, perfect for enjoying the sunrise.",
-        amenities: ["Free Wi-Fi", "Air Conditioning", "Flat-screen TV", "Mini Bar", "Jacuzzi"],
-        price: 200,
-    },
-    {
-        title: "Family Suite",
-        description: "A large suite with two bedrooms, ideal for families or groups.",
-        amenities: ["Free Wi-Fi", "Air Conditioning", "Flat-screen TV", "Mini Bar", "Living Area"],
-        price: 300,
+        amenities: ["Free Wi-Fi", "Complimentary Breakfast", "Flat-screen TV", "Beverages"],
+        src:"/assets/room7.webp"
+        // price: 200,
     },
 ];

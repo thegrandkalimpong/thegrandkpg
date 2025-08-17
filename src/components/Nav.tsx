@@ -1,7 +1,7 @@
 "use client";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { AlignJustify, Facebook, Instagram, Twitter, X } from "lucide-react";
+import { AlignJustify, Facebook, Instagram, Twitter, X, Youtube } from "lucide-react";
 import Link from "next/link";
 import React, { useRef } from "react";
 import NavHamburger from "./NavHamburger";
@@ -72,6 +72,13 @@ const Nav = () => {
         <div className="flex ">
             <div className="hidden md:flex items-center gap-6 ">
                 
+                
+                <Link
+                    href={contact.socialLinks.instagram}
+                    target="_blank"
+                >
+                    <Instagram className={`${pathname === "/" ? 'homepage-navbar-social' : 'navbar-social'} h-6 w-6`} />
+                </Link>
                 <Link
                     href={contact.socialLinks.facebook}
                     target="_blank"
@@ -79,16 +86,11 @@ const Nav = () => {
                     <Facebook className={`${pathname === "/" ?'homepage-navbar-social':'navbar-social'} h-6 w-6`} />
                 </Link>
                 <Link
-                    href={contact.socialLinks.instagram}
+                    href={contact.socialLinks.youtube}
                     target="_blank"
                 >
-                    <Instagram className={`${pathname === "/" ? 'homepage-navbar-social' : 'navbar-social'} h-6 w-6`} />
+                    <Youtube className={`${pathname === "/" ? 'homepage-navbar-social' : 'navbar-social'} h-6 w-6`} />
                 </Link>
-                {/* <Link
-                    href={"/"}
-                >
-                    <Twitter className={`${pathname === "/" ? 'homepage-navbar-social' : 'navbar-social'} h-6 w-6`} />
-                </Link> */}
             </div>
             <button
                 className={`text-greenish ml-6 relative z-50 p-2 transition-transform hover:scale-110 ${isOpen ? "" : ""}`}

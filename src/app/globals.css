@@ -85,7 +85,7 @@
     }
 
     .room-features-container {
-        @apply grid grid-cols-1 grid-rows-3 gap-4 text-center;
+        @apply grid grid-cols-1 grid-rows-4 gap-4 text-center;
 
         .room-features {
             @apply bg-moss-light text-cream flex h-full w-full flex-col items-center justify-center gap-2 py-6;

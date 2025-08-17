@@ -1,7 +1,6 @@
 import { TRoomImage } from "@/types/room";
 
 export const roomImages: TRoomImage[] = [
-    // Balcony images
     {
         id: "1",
         src: "/assets/balcony.webp",

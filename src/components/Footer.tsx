@@ -5,6 +5,7 @@ import {
     ArrowRight,
     Instagram,
     Facebook,
+    Youtube,
 } from "lucide-react";
 
 import Image from "next/image";
@@ -120,17 +121,24 @@ const Footer = () => {
                             Follow Us:
                         </span>
                         <div className="flex space-x-4">
-                            <a
-                                href={`${contact.socialLinks.facebook}`}
-                                className="footer-social"
-                            >
-                                <Facebook />
-                            </a>
+                           
                             <a
                                 href={`${contact.socialLinks.instagram}`}
                                 className="footer-social"
                             >
                                 <Instagram className="" />
+                            </a>
+                             <a
+                                href={`${contact.socialLinks.facebook}`}
+                                className="footer-social"
+                            >
+                                <Facebook />
+                            </a>
+                             <a
+                                href={`${contact.socialLinks.youtube}`}
+                                className="footer-social"
+                            >
+                                <Youtube className="" />
                             </a>
                         </div>
                     </div>
