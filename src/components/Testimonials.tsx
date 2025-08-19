@@ -12,7 +12,7 @@ const TestimonialCard = ({
 }) => {
     return (
         <div
-            className={`bg-cream/60 flex flex-col justify-between rounded-2xl border border-gray-100 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${className}`}
+            className={`bg-cream/80 flex flex-col justify-between rounded-lg border border-gray-100 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${className}`}
         >
             <div>
                 {/* Stars */}
@@ -56,14 +56,14 @@ const TestimonialCard = ({
 // Bento Grid (hard-coded)
 const BentoTestimonials = () => {
     return (
-        <section className="via-moss-light/40 bg-gradient-to-br from-gray-50 to-gray-50 px-4 py-20">
+        <section className="via-moss-light/30 bg-gradient-to-br from-gray-50 to-gray-50 px-4 py-20">
             <div className="mx-auto max-w-7xl">
                 {/* Heading */}
                 <div className="mb-16 text-center">
-                    <h2 className="mb-4 text-4xl font-bold">
+                    <h2 className="mb-4 font-bold">
                         What Our Guests Are Saying
                     </h2>
-                    <p className="mx-auto max-w-2xl text-xl text-gray-600">
+                    <p className="mx-auto max-w-2xl text-lg text-gray-600">
                         Discover why travelers from around the world choose us
                         for unforgettable experiences
                     </p>

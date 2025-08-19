@@ -6,8 +6,8 @@ const Map = () => {
     return (
         <Image
             src={"/map.webp"}
-            width={600}
-            height={400}
+            width={500}
+            height={350}
             alt={"Map"}
             className="border-moss/30 mx-auto basis-1/2 cursor-pointer rounded border-4 object-cover object-center"
             priority
