@@ -10,7 +10,7 @@ const Waterfall = () => {
                     className="h-full w-full"
                 />
             </div>
-            <div className="bg-moss-light font-handwriting relative order-1 flex w-full items-center justify-center p-4 md:order-none md:flex">
+            <div className="bg-moss-light font-handwriting relative order-1 flex w-full items-center justify-center p-4 md:order-none md:flex min-h-24 text-2xl">
                 Where every flavor tells a story
                 <span className="border-cream absolute inset-3 border-2" />
             </div>
@@ -23,15 +23,15 @@ const Waterfall = () => {
             {/* <div className="w-full bg-moss-light">k</div> */}
             <div className="bg-moss-light order-4 aspect-square h-full w-full md:order-none md:row-span-3">
                 <ImageFrame
-                    src="/assets/view9.webp"
+                    src="/assets/garden3.jpg"
                     className="h-full w-full"
                 />
             </div>
-            <div className="bg-moss-light/95 font-handwriting relative order-3 flex w-full items-center justify-center p-4 md:order-none md:flex">
+            <div className="bg-moss-light/95 font-handwriting relative order-3 flex w-full items-center justify-center p-4 md:order-none md:flex min-h-24 text-2xl text-center">
                 Wake up to views worth remembering
                 <span className="border-cream absolute inset-3 border-2" />
             </div>
-            <div className="bg-moss-light/95 font-handwriting relative order-4 flex w-full items-center justify-center p-4 md:order-none md:flex">
+            <div className="bg-moss-light/95 font-handwriting relative order-4 flex w-full items-center justify-center p-4 md:order-none md:flex min-h-24 text-2xl text-center">
                 Hospitality that feels like home
                 <span className="border-cream absolute inset-3 border-2" />
             </div>

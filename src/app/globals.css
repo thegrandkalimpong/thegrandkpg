@@ -132,3 +132,7 @@
     li:nth-child(odd) {
         @apply bg-moss hover:bg-moss-dark;
     }}
+
+@utility footer-contact-container{
+    @apply mt-2 flex gap-2 text-xs  xl:text-sm;
+} 

@@ -41,8 +41,8 @@ export default function Home() {
             <section>
                 <WelcomeSection />
             </section>
-            <h2 className="font-mageline text-moss-light mt-20 mb-10 text-center text-5xl font-bold">
-                Your Comfort, Our Priority
+            <h2 className="font-mageline text-moss-light mt-20 mb-10 text-center text-5xl font-bold px-4">
+                Your Comfort Our Priority
             </h2>
             <Waterfall />
             <BentoTestimonials />
