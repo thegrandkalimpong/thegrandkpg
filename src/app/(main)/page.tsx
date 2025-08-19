@@ -1,5 +1,6 @@
 import Heading from "@/components/Heading";
 import MapSection from "@/components/MapSection";
+import BentoTestimonials from "@/components/Testimonials";
 import Waterfall from "@/components/Waterfall";
 import WelcomeSection from "@/components/WelcomeSection";
 import gsap from "gsap";
@@ -44,7 +45,7 @@ export default function Home() {
                 Your Comfort, Our Priority
             </h2>
             <Waterfall />
-
+            <BentoTestimonials />
             <MapSection />
         </div>
     );
